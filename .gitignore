@@ -9,6 +9,7 @@
 UserSettings/
 MemoryCaptures/
 Library/
+Packages/PackageCache/
 # Unity package manager
 Packages/manifest.json
 Packages/packages-lock.json
