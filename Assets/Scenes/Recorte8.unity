@@ -178,10 +178,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: "<b>Generalidades:</b> Centro nervioso noradren\xE9rgico que participa
     en la modulaci\xF3n de la funci\xF3n cerebelosa y el despertamiento, dentro del
-    sistema activador reticular ascendente.<br><br> <b>Principales aferencias:</b>
-    <link=\"Recorte3\"><color=#007AFF><u>n\xFAcleos somatoest\xE9sicos del tallo
-    cerebral</u></color></link><br><br> <b>Principales eferencias:</b> corteza cerebelosa<br><br>
-    <b>M\xE1s informaci\xF3n en:</b> \u2026 "
+    sistema activador reticular ascendente.<br><br> <b>Principales aferencias:<link=\"Recorte3\"><color=#007AFF><u>n\xFAcleos
+    somatoest\xE9sicos del tallo cerebral</u></color></link><br><br> \n<b>Principales
+    eferencias:</b> corteza cerebelosa<br><br> <b>M\xE1s informaci\xF3n en:</b> \u2026 "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -208,8 +207,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
-  m_fontSizeBase: 25
+  m_fontSize: 22
+  m_fontSizeBase: 22
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -873,7 +872,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panel: {fileID: 140399503}
   textoInformacion: {fileID: 18446940}
-  miniaturaRecorte3: {fileID: 698243875}
+  miniaturaRecorte: {fileID: 0}
 --- !u!1 &251443194
 GameObject:
   m_ObjectHideFlags: 0
@@ -1466,7 +1465,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 727099222}
   m_Direction: 0
   m_Value: 0
-  m_Size: 0.99999994
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2250,6 +2249,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 140399504}
     - target: {fileID: 5597142459016686881, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
+      propertyPath: temaID
+      value: puente2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5597142459016686881, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
+      propertyPath: zonaID
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5597142459016686881, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: infoTexto
       value: Texto 1
       objectReference: {fileID: 0}
@@ -2403,6 +2410,14 @@ PrefabInstance:
       propertyPath: panel
       value: 
       objectReference: {fileID: 140399504}
+    - target: {fileID: 5597142459016686881, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
+      propertyPath: temaID
+      value: puente2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5597142459016686881, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
+      propertyPath: zonaID
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5597142459016686881, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: infoTexto
       value: "<b>Generalidades:</b> Centro nervioso noradren\xE9rgico que participa
@@ -2608,7 +2623,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6547176080402779291, guid: 8bbf7077b44272545a82ed2c1fa74f39, type: 3}
       propertyPath: nombreEscena
-      value: CortePuente
+      value: VistaPrincipal
       objectReference: {fileID: 0}
     - target: {fileID: 8172960602360995395, guid: 8bbf7077b44272545a82ed2c1fa74f39, type: 3}
       propertyPath: m_Name

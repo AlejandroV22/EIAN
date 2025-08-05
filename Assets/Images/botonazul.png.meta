@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      botonazul_0: -267114359043988403
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

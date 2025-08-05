@@ -9,7 +9,9 @@ public class InfoPanel : MonoBehaviour
     [Header("Referencias")]
     public GameObject panel;
     public TextMeshProUGUI textoInformacion;
-    public GameObject miniaturaRecorte3;
+    public GameObject miniaturaRecorte;
+
+
 
     private Camera mainCamera;
 void Update()
@@ -22,21 +24,20 @@ void Update()
         TMP_LinkInfo linkInfo = textoInformacion.textInfo.linkInfo[linkIndex];
         string linkID = linkInfo.GetLinkID();
 
-        if (linkID == "Recorte3" && miniaturaRecorte3 != null)
+        if (linkID == "Recorte3" && miniaturaRecorte != null)
         {
-            miniaturaRecorte3.SetActive(true);
+            miniaturaRecorte.SetActive(true);
         }
-        else if (miniaturaRecorte3 != null)
+        else if (miniaturaRecorte != null)
         {
-            miniaturaRecorte3.SetActive(false);
+            miniaturaRecorte.SetActive(false);
         }
     }
-    else if (miniaturaRecorte3 != null)
+    else if (miniaturaRecorte != null)
     {
-        miniaturaRecorte3.SetActive(false);
+        miniaturaRecorte.SetActive(false);
     }
 
-    // Detectar click y cargar escena (puedes mantener esta parte también aquí)
     if (Input.GetMouseButtonDown(0))
     {
         if (linkIndex != -1)
@@ -54,8 +55,10 @@ void Update()
         if (panel != null)
             panel.SetActive(false);
 
-        if (miniaturaRecorte3 != null)
-            miniaturaRecorte3.SetActive(false);
+        if (miniaturaRecorte != null)
+            miniaturaRecorte.SetActive(false);
+            //PlayerPrefs.SetInt("tema1_panel3_visto", 1);
+            //PlayerPrefs.Save();
 
         mainCamera = Camera.main;
     }
@@ -66,6 +69,7 @@ void Update()
         {
             panel.SetActive(true);
             textoInformacion.text = info;
+            
         }
         else
         {

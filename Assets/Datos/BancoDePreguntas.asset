@@ -1,0 +1,167 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0830c2036e371844c81e7f616091a8b6, type: 3}
+  m_Name: BancoDePreguntas
+  m_EditorClassIdentifier: 
+  todasLasPreguntas:
+  - tema: A
+    textoPregunta: Pregunta A1
+    opciones:
+    - A. lo que sea
+    - B
+    - C
+    - D
+    indiceRespuestaCorrecta: 2
+  - tema: A
+    textoPregunta: Pregunta A2
+    opciones:
+    - A
+    - B
+    - C
+    - D
+    indiceRespuestaCorrecta: 2
+  - tema: A
+    textoPregunta: Pregunta A3
+    opciones:
+    - A
+    - B
+    - C
+    - D
+    indiceRespuestaCorrecta: 2
+  - tema: A
+    textoPregunta: Pregunta A4
+    opciones:
+    - A
+    - B
+    - C
+    - D
+    indiceRespuestaCorrecta: 2
+  - tema: B
+    textoPregunta: Pregunta B1
+    opciones:
+    - A
+    - B
+    - C
+    - D
+    indiceRespuestaCorrecta: 2
+  - tema: B
+    textoPregunta: Pregunta B2
+    opciones:
+    - A
+    - B
+    - C
+    - D
+    indiceRespuestaCorrecta: 2
+  - tema: B
+    textoPregunta: Pregunta B3
+    opciones:
+    - A
+    - B
+    - C
+    - D
+    indiceRespuestaCorrecta: 2
+  - tema: B
+    textoPregunta: Pregunta B4
+    opciones:
+    - A
+    - B
+    - C
+    - D
+    indiceRespuestaCorrecta: 2
+  - tema: C
+    textoPregunta: Pregunta C1
+    opciones:
+    - A
+    - B
+    - C
+    - D
+    indiceRespuestaCorrecta: 2
+  - tema: C
+    textoPregunta: Pregunta C2
+    opciones:
+    - A
+    - B
+    - C
+    - D
+    indiceRespuestaCorrecta: 2
+  - tema: C
+    textoPregunta: Pregunta C3
+    opciones:
+    - A
+    - B
+    - C
+    - D
+    indiceRespuestaCorrecta: 2
+  - tema: D
+    textoPregunta: Pregunta D1
+    opciones:
+    - A
+    - B
+    - C
+    - D
+    indiceRespuestaCorrecta: 2
+  - tema: D
+    textoPregunta: Pregunta D2
+    opciones:
+    - A
+    - B
+    - C
+    - D
+    indiceRespuestaCorrecta: 2
+  - tema: D
+    textoPregunta: Pregunta D3
+    opciones:
+    - A
+    - B
+    - C
+    - D
+    indiceRespuestaCorrecta: 2
+  - tema: D
+    textoPregunta: Pregunta D4
+    opciones:
+    - A
+    - B
+    - C
+    - D
+    indiceRespuestaCorrecta: 2
+  - tema: E
+    textoPregunta: Pregunta E1
+    opciones:
+    - A
+    - B
+    - C
+    - D
+    indiceRespuestaCorrecta: 2
+  - tema: E
+    textoPregunta: Pregunta E2
+    opciones:
+    - A
+    - B
+    - C
+    - D
+    indiceRespuestaCorrecta: 2
+  - tema: E
+    textoPregunta: Pregunta E3
+    opciones:
+    - A
+    - B
+    - C
+    - D
+    indiceRespuestaCorrecta: 2
+  - tema: E
+    textoPregunta: Pregunta E4
+    opciones:
+    - A
+    - B
+    - C
+    - D
+    indiceRespuestaCorrecta: 2

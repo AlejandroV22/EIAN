@@ -15,8 +15,17 @@ EditorBuildSettings:
     path: Assets/Scenes/Recorte8.unity
     guid: 7b895dfdf6d8ace4782956e5acc77e36
   - enabled: 1
+    path: Assets/Scenes/MenuQuices.unity
+    guid: 72d39facfa2755948bed8bf9d5e568f2
+  - enabled: 1
+    path: Assets/Scenes/Quiz1.unity
+    guid: 80ff9aa720e79394f9745d1c9db0bf16
+  - enabled: 1
     path: Assets/Scenes/CortePuente.unity
     guid: dca2c411db1b39245b7cb9b607567af5
+  - enabled: 1
+    path: Assets/Scenes/MenuPrincipal.unity
+    guid: 988d1b3fe9358c840a49f3d5cbf70605
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
