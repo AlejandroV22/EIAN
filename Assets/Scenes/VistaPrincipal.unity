@@ -454,6 +454,7 @@ RectTransform:
   - {fileID: 67278816}
   - {fileID: 1070991062}
   - {fileID: 660401259}
+  - {fileID: 1710212150}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -764,11 +765,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5366792491441569850, guid: 8bbf7077b44272545a82ed2c1fa74f39, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 90.3194
+      value: 75
       objectReference: {fileID: 0}
     - target: {fileID: 5366792491441569850, guid: 8bbf7077b44272545a82ed2c1fa74f39, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 89.1466
+      value: 75
       objectReference: {fileID: 0}
     - target: {fileID: 5366792491441569850, guid: 8bbf7077b44272545a82ed2c1fa74f39, type: 3}
       propertyPath: m_LocalScale.x
@@ -1049,6 +1050,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!224 &1710212150 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7495762595177131026, guid: 7e98f098938ecd24f86e507ebb9cf6da, type: 3}
+  m_PrefabInstance: {fileID: 1047280731045076107}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1710212153 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6663934580263649915, guid: 7e98f098938ecd24f86e507ebb9cf6da, type: 3}
+  m_PrefabInstance: {fileID: 1047280731045076107}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8768179994e75e4fb22a46559c7a928, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1962700833
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1196,8 +1213,106 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0.3}
   nombreEscena: Recorte8
+  panelAdvertencia: {fileID: 1710212153}
   zonaID: 2
   nombreTema: quiz1
+--- !u!1001 &1047280731045076107
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 130184516}
+    m_Modifications:
+    - target: {fileID: 4984775345393091315, guid: 7e98f098938ecd24f86e507ebb9cf6da, type: 3}
+      propertyPath: m_Name
+      value: PanelAdvertencia
+      objectReference: {fileID: 0}
+    - target: {fileID: 7495762595177131026, guid: 7e98f098938ecd24f86e507ebb9cf6da, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7495762595177131026, guid: 7e98f098938ecd24f86e507ebb9cf6da, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7495762595177131026, guid: 7e98f098938ecd24f86e507ebb9cf6da, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7495762595177131026, guid: 7e98f098938ecd24f86e507ebb9cf6da, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7495762595177131026, guid: 7e98f098938ecd24f86e507ebb9cf6da, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7495762595177131026, guid: 7e98f098938ecd24f86e507ebb9cf6da, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7495762595177131026, guid: 7e98f098938ecd24f86e507ebb9cf6da, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7495762595177131026, guid: 7e98f098938ecd24f86e507ebb9cf6da, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7495762595177131026, guid: 7e98f098938ecd24f86e507ebb9cf6da, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7495762595177131026, guid: 7e98f098938ecd24f86e507ebb9cf6da, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7495762595177131026, guid: 7e98f098938ecd24f86e507ebb9cf6da, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7495762595177131026, guid: 7e98f098938ecd24f86e507ebb9cf6da, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7495762595177131026, guid: 7e98f098938ecd24f86e507ebb9cf6da, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7495762595177131026, guid: 7e98f098938ecd24f86e507ebb9cf6da, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7495762595177131026, guid: 7e98f098938ecd24f86e507ebb9cf6da, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7495762595177131026, guid: 7e98f098938ecd24f86e507ebb9cf6da, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7495762595177131026, guid: 7e98f098938ecd24f86e507ebb9cf6da, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7495762595177131026, guid: 7e98f098938ecd24f86e507ebb9cf6da, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7495762595177131026, guid: 7e98f098938ecd24f86e507ebb9cf6da, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7495762595177131026, guid: 7e98f098938ecd24f86e507ebb9cf6da, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7e98f098938ecd24f86e507ebb9cf6da, type: 3}
 --- !u!1001 &2126802689016689835
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1344,6 +1459,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverColor: {r: 1, g: 1, b: 1, a: 0.3}
   nombreEscena: CortePuente
+  panelAdvertencia: {fileID: 0}
   zonaID: 1
   nombreTema: 
 --- !u!1660057539 &9223372036854775807

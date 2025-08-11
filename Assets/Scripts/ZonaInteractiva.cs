@@ -8,6 +8,7 @@ public class ZonaInteractiva : MonoBehaviour, IPointerEnterHandler, IPointerExit
     private Image image;
     private Color originalColor;
     public string nombreEscena;
+    public PanelAdvertencia panelAdvertencia;
 
     [Header("Tracking")]
     public int zonaID;
@@ -45,6 +46,7 @@ public class ZonaInteractiva : MonoBehaviour, IPointerEnterHandler, IPointerExit
                 if (PlayerPrefs.GetInt("QuizAprobado_" + nombreTema, 0) == 0)
                 {
                     Debug.Log("Faltan resolver el quiz  para este tema.");
+                    panelAdvertencia.MostrarMensaje("Debes aprobar el quiz 1 para poder acceder.");
                     return;
                 }
                 SceneManager.LoadScene(nombreEscena);

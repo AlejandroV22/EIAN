@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 public class QuizScript : MonoBehaviour
 {
     public string[] zonasDelTema;  // Ej: {"Tallo_1", "Tallo_2", "Tallo_3"}
-
+    public PanelAdvertencia panelAdvertencia;
     public void IntentarAbrirQuiz()
     {
         foreach (string zonaID in zonasDelTema)
@@ -11,6 +11,7 @@ public class QuizScript : MonoBehaviour
             if (PlayerPrefs.GetInt("ZonaVisitada_" + zonaID, 0) == 0)
             {
                 Debug.Log("Faltan zonas por visitar para este tema.");
+                panelAdvertencia.MostrarMensaje("Debes estudiar todas las zonas para acceder al quiz.");
                 return;
             }
         }
