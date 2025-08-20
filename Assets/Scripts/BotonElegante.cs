@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class BotonElegante : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
-    public GameObject subrayado; // arrastra el objeto "Subrayado" en el inspector
+    public GameObject subrayado; 
     private Vector3 escalaOriginal;
 
     void Start()
@@ -20,8 +20,7 @@ public class BotonElegante : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
         if (subrayado != null)
             subrayado.SetActive(true);
 
-        // efecto de crecer un poquito
-        transform.localScale = escalaOriginal * 1.05f;
+        transform.localScale = escalaOriginal * 1.25f;
     }
 
     public void OnPointerExit(PointerEventData eventData)
@@ -29,7 +28,7 @@ public class BotonElegante : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
         if (subrayado != null)
             subrayado.SetActive(false);
 
-        // volver a la escala original
+        
         transform.localScale = escalaOriginal;
     }
 }
