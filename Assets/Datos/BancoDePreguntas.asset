@@ -16,10 +16,12 @@ MonoBehaviour:
   - tema: A
     textoPregunta: Pregunta A1
     opciones:
-    - A. lo que sea
-    - B
-    - C
-    - D
+    - Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex
+      sapien.
+    - Lorem ipsum dolor sit amet consectetur adipiscing elit.
+    - Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex
+      sapien vitae pellentesque.
+    - Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus.
     indiceRespuestaCorrecta: 2
   - tema: A
     textoPregunta: Pregunta A2
