@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   todasLasPreguntas:
   - tema: A
-    textoPregunta: Pregunta A1
+    textoPregunta: Lorem ipsum dolor sit amet consectetur adipiscing elit?
     opciones:
     - Lorem ipsum dolor sit amet consectetur adipiscing elit quisque faucibus ex
       sapien.

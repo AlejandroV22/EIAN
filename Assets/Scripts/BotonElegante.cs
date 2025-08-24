@@ -20,7 +20,7 @@ public class BotonElegante : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
         if (subrayado != null)
             subrayado.SetActive(true);
 
-        transform.localScale = escalaOriginal * 1.25f;
+        transform.localScale = escalaOriginal * 1.37f;
     }
 
     public void OnPointerExit(PointerEventData eventData)
