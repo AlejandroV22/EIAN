@@ -20,4 +20,8 @@ public class MenuPrincipal : MonoBehaviour
         Application.Quit();
         Debug.Log("Aplicación cerrada.");
     }
+     public void Minijuego()
+    {
+        SceneManager.LoadScene("MenuQuices");
+    }
 }

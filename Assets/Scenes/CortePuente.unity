@@ -452,7 +452,7 @@ PrefabInstance:
     - target: {fileID: 8751734652614273279, guid: 5eccde1fda8387945a6645146f805dc7, type: 3}
       propertyPath: m_Texture
       value: 
-      objectReference: {fileID: 2800000, guid: 3dc07df443947e540a32167be206a8a3, type: 3}
+      objectReference: {fileID: 2800000, guid: 2a54b6d317ef3c14896713fb80e52f18, type: 3}
     - target: {fileID: 8751734652614273279, guid: 5eccde1fda8387945a6645146f805dc7, type: 3}
       propertyPath: m_RaycastTarget
       value: 1
