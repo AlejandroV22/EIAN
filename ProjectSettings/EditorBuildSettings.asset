@@ -24,6 +24,18 @@ EditorBuildSettings:
     path: Assets/Scenes/CortePuente.unity
     guid: dca2c411db1b39245b7cb9b607567af5
   - enabled: 1
+    path: Assets/Scenes/MenuMinijuegos.unity
+    guid: e4003915a7fd41b4e8c678be6ab76976
+  - enabled: 1
+    path: Assets/Scenes/MinijuegoColumnas.unity
+    guid: 3063f67e978374c49aad0d4485ac2c71
+  - enabled: 1
+    path: Assets/Scenes/MinijuegoColumnas2.unity
+    guid: e207d787c95cecc4fb9d41138cff6b7e
+  - enabled: 1
+    path: Assets/Scenes/MinijuegoPares.unity
+    guid: 8496e71c567c9784d8a5599509a4bda5
+  - enabled: 1
     path: Assets/Scenes/MenuPrincipal.unity
     guid: 988d1b3fe9358c840a49f3d5cbf70605
   m_configObjects:

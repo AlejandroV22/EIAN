@@ -22,6 +22,6 @@ public class MenuPrincipal : MonoBehaviour
     }
      public void Minijuego()
     {
-        SceneManager.LoadScene("MenuQuices");
+        SceneManager.LoadScene("MenuMinijuegos");
     }
 }
