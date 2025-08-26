@@ -7,6 +7,8 @@ public class GameManagerMemoria : MonoBehaviour
 
     private CardMemoria primeraCarta = null;
     private CardMemoria segundaCarta = null;
+    private bool bloqueado = false;
+    public bool IsBloqueado() => bloqueado;
 
     private int parejasEncontradas = 0;
     public int totalParejas = 4;
@@ -22,6 +24,8 @@ public class GameManagerMemoria : MonoBehaviour
 
     public void CartaSeleccionada(CardMemoria carta)
     {
+        if (bloqueado) return; // Ignore clicks while checking
+
         if (primeraCarta == null)
         {
             primeraCarta = carta;
@@ -29,9 +33,11 @@ public class GameManagerMemoria : MonoBehaviour
         else if (segundaCarta == null && carta != primeraCarta)
         {
             segundaCarta = carta;
+            bloqueado = true;
             StartCoroutine(VerificarPareja());
         }
     }
+
 
     private IEnumerator VerificarPareja()
     {
@@ -56,7 +62,9 @@ public class GameManagerMemoria : MonoBehaviour
 
         primeraCarta = null;
         segundaCarta = null;
+        bloqueado = false; // unlock for next turn
     }
+
 
     private void Victoria()
     {

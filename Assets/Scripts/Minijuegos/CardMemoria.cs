@@ -11,19 +11,20 @@ public class CardMemoria : MonoBehaviour, IPointerClickHandler
     private bool descubierta = false;
     private bool encontrada = false;
 
-
     public void Start()
     {
         Mostrar();
         Invoke(nameof(Ocultar), 4f);
     }
+
     public void OnPointerClick(PointerEventData eventData)
     {
-        if (!descubierta && !encontrada)
-        {
-            Mostrar();
-            GameManagerMemoria.Instance.CartaSeleccionada(this);
-        }
+
+        if (GameManagerMemoria.Instance.IsBloqueado() || descubierta || encontrada)
+            return;
+
+        Mostrar();
+        GameManagerMemoria.Instance.CartaSeleccionada(this);
     }
 
     public void Mostrar()
@@ -42,6 +43,6 @@ public class CardMemoria : MonoBehaviour, IPointerClickHandler
 
     public void Bloquear()
     {
-        encontrada = true; // Ya no se puede interactuar
+        encontrada = true; 
     }
 }
