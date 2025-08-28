@@ -1095,7 +1095,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f8e3135570c04a47806a91053e1a69a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreEscena: MinijuegoColumnas
+  nombreEscena: MinijuegoColumnas2
 --- !u!114 &691845121
 MonoBehaviour:
   m_ObjectHideFlags: 0
