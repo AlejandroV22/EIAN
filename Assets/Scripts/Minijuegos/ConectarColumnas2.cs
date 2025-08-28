@@ -1,8 +1,9 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
-public class LineDrawer : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
+public class LineDrawer2D : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
     private LineRenderer currentLine;
     private Vector3 startPos;
@@ -15,7 +16,14 @@ public class LineDrawer : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     public Color colorCorrecto = Color.green;
     public Color colorIncorrecto = Color.red;
 
-    private bool yaConectado = false; // 🔹 Bloquea múltiples intentos en este botón
+    private bool yaConectado = false;
+
+    [Header("Orden de renderizado")]
+    public string sortingLayerName = "UI";
+    public int sortingOrder = 100;
+
+    // 🔹 Lista global para poder borrar todas las líneas
+    public static List<LineRenderer> lineasActivas = new List<LineRenderer>();
 
     void Update()
     {
@@ -29,14 +37,15 @@ public class LineDrawer : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        if (yaConectado) return; // 🔹 No iniciar si ya está conectado
+        if (yaConectado) return;
 
-        // Inicio de la línea en este botón izquierdo
-        startPos = Camera.main.ScreenToWorldPoint(transform.position);
+        // ✅ Tomamos la posición de mundo del botón tal cual
+        startPos = transform.position;
         startPos.z = 0;
 
         GameObject lineObj = new GameObject("LineaTemp");
         currentLine = lineObj.AddComponent<LineRenderer>();
+
         currentLine.startWidth = 0.05f;
         currentLine.endWidth = 0.05f;
         currentLine.positionCount = 2;
@@ -44,18 +53,23 @@ public class LineDrawer : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         currentLine.startColor = Color.white;
         currentLine.endColor = Color.white;
 
+        currentLine.sortingLayerName = sortingLayerName;
+        currentLine.sortingOrder = sortingOrder;
+
         currentLine.SetPosition(0, startPos);
         currentLine.SetPosition(1, startPos);
 
         isDrawing = true;
+
+        // Guardar en lista global
+        lineasActivas.Add(currentLine);
     }
 
     public void OnPointerUp(PointerEventData eventData)
     {
-        if (yaConectado) return; // 🔹 No verificar de nuevo si ya se conectó
+        if (yaConectado) return;
 
         isDrawing = false;
-
         GameObject obj = eventData.pointerCurrentRaycast.gameObject;
 
         if (obj != null)
@@ -71,9 +85,7 @@ public class LineDrawer : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
                     currentLine.startColor = colorCorrecto;
                     currentLine.endColor = colorCorrecto;
 
-                    yaConectado = true; // 🔹 Bloquea nuevas líneas para este botón
-
-                    // Avisar al GameManager
+                    yaConectado = true;
                     GameManagerParejas.Instance.ParejaCorrectaEncontrada();
                 }
                 else
@@ -81,18 +93,32 @@ public class LineDrawer : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
                     currentLine.startColor = colorIncorrecto;
                     currentLine.endColor = colorIncorrecto;
                     Destroy(currentLine.gameObject, 0.5f);
+                    lineasActivas.Remove(currentLine);
                 }
             }
             else
             {
                 Destroy(currentLine.gameObject);
+                lineasActivas.Remove(currentLine);
             }
         }
         else
         {
             Destroy(currentLine.gameObject);
+            lineasActivas.Remove(currentLine);
         }
 
         currentLine = null;
+    }
+
+    // 🔹 Llamar este método desde el GameManager cuando se muestre el panel de victoria
+    public static void BorrarTodasLasLineas()
+    {
+        foreach (var linea in lineasActivas)
+        {
+            if (linea != null)
+                Destroy(linea.gameObject);
+        }
+        lineasActivas.Clear();
     }
 }

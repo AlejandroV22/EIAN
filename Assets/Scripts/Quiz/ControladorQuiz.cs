@@ -85,12 +85,18 @@ public class ControladorQuiz : MonoBehaviour
     {
         panelResultado.SetActive(true);
         float porcentaje = (respuestasCorrectas / 10f) * 100f;
-        textoResultado.text = $"Respuestas correctas: {respuestasCorrectas}/10\nPorcentaje: {porcentaje}%";
+
         if (respuestasCorrectas >= 7)
         {
             PlayerPrefs.SetInt("QuizAprobado_" + nombreTema, 1);
             PlayerPrefs.Save();
+            textoResultado.text = $"Respuestas correctas: {respuestasCorrectas}/10\nPorcentaje: {porcentaje}%\n Aprobaste el quiz!";
         }
+        else
+        { 
+            textoResultado.text = $"Respuestas correctas: {respuestasCorrectas}/10\nPorcentaje: {porcentaje}%\n Debes tener un porcentaje de 70% o más para aprobar";
+        }
+
     }
 
 

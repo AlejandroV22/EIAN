@@ -9,8 +9,11 @@ public class AvatarManager : MonoBehaviour
     public TextMeshProUGUI nombreAvatar;
 
     [Header("Avatares por progreso")]
-    public Sprite[] imagenesAvatares;  // imágenes diferentes
-    public string[] nombresAvatares;   // nombres diferentes
+    public Sprite[] imagenesAvatares;      // imágenes diferentes
+    public string[] nombresAvatares;       // nombres diferentes
+
+    [Header("Temas del quiz (en orden)")]
+    public string[] nombresTemas;          // 
 
     void Start()
     {
@@ -19,12 +22,29 @@ public class AvatarManager : MonoBehaviour
 
     public void ActualizarAvatar()
     {
-        
-        int quizzesAprobados = PlayerPrefs.GetInt("QuizAprobado", 0);
+        // Contar cuántos quizzes están aprobados
+        int aprobados = 0;
 
-        int index = Mathf.Clamp(quizzesAprobados, 0, imagenesAvatares.Length - 1);
+        foreach (string tema in nombresTemas)
+        {
+            if (PlayerPrefs.GetInt("QuizAprobado_" + tema, 0) == 1)
+            {
+                aprobados++;
+            }
+        }
 
-        imagenAvatar.sprite = imagenesAvatares[index];
-        nombreAvatar.text = nombresAvatares[index];
+        // Calcular índice de avatar
+        int index = Mathf.Clamp(aprobados, 0, imagenesAvatares.Length - 1);
+
+        // Asignar imagen y nombre
+        if (imagenesAvatares.Length > 0 && index < imagenesAvatares.Length)
+        {
+            imagenAvatar.sprite = imagenesAvatares[index];
+        }
+
+        if (nombresAvatares.Length > 0 && index < nombresAvatares.Length)
+        {
+            nombreAvatar.text = nombresAvatares[index];
+        }
     }
 }

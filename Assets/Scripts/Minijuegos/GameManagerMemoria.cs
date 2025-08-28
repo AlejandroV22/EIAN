@@ -16,15 +16,35 @@ public class GameManagerMemoria : MonoBehaviour
     [Header("UI")]
     public GameObject panelVictoria;
 
+    [Header("Cartas")]
+    public Transform contenedorCartas; // 🔹 Padre que contiene todas las cartas
+
     private void Awake()
     {
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
     }
 
+    private void Start()
+    {
+        MezclarCartas();
+    }
+
+    private void MezclarCartas()
+    {
+        int total = contenedorCartas.childCount;
+        for (int i = 0; i < total; i++)
+        {
+            // Elegir un índice aleatorio
+            int randomIndex = Random.Range(0, total);
+            // Cambiar el orden en la jerarquía
+            contenedorCartas.GetChild(randomIndex).SetSiblingIndex(i);
+        }
+    }
+
     public void CartaSeleccionada(CardMemoria carta)
     {
-        if (bloqueado) return; // Ignore clicks while checking
+        if (bloqueado) return;
 
         if (primeraCarta == null)
         {
@@ -37,7 +57,6 @@ public class GameManagerMemoria : MonoBehaviour
             StartCoroutine(VerificarPareja());
         }
     }
-
 
     private IEnumerator VerificarPareja()
     {
@@ -62,9 +81,8 @@ public class GameManagerMemoria : MonoBehaviour
 
         primeraCarta = null;
         segundaCarta = null;
-        bloqueado = false; // unlock for next turn
+        bloqueado = false;
     }
-
 
     private void Victoria()
     {

@@ -34,6 +34,8 @@ public class GameManagerParejas : MonoBehaviour
     {
         Debug.Log("¡Has ganado!");
         if (panelVictoria != null)
+            LineDrawer2D.BorrarTodasLasLineas();
             panelVictoria.SetActive(true);
+
     }
 }

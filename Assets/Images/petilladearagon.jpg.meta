@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 75ef4449b45b625419eb21d383d8fd2c
+guid: ef69bfe05dec1cb4cad10f342cd3934f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 413495324006746549
-    second: cartoon-male-nurse-character-vector-removebg-preview_0
+      213: 46771985622719385
+    second: petilladearagon_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cartoon-male-nurse-character-vector-removebg-preview_0
+      name: petilladearagon_0
       rect:
         serializedVersion: 2
-        x: 135
-        y: 28
-        width: 230
-        height: 444
+        x: 0
+        y: 0
+        width: 800
+        height: 480
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5b905bf6ec70db500800000000000000
-      internalID: 413495324006746549
+      spriteID: 99b5b748fda26a000800000000000000
+      internalID: 46771985622719385
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      cartoon-male-nurse-character-vector-removebg-preview_0: 413495324006746549
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
