@@ -89,6 +89,9 @@ public class ControladorQuiz : MonoBehaviour
         if (respuestasCorrectas >= 7)
         {
             PlayerPrefs.SetInt("QuizAprobado_" + nombreTema, 1);
+            Debug.Log("Quiz1: " + PlayerPrefs.GetInt("QuizAprobado_quiz1", 0));
+            Debug.Log("Quiz2: " + PlayerPrefs.GetInt("QuizAprobado_quiz2", 0));
+            Debug.Log("Quiz3: " + PlayerPrefs.GetInt("QuizAprobado_quiz3", 0));
             PlayerPrefs.Save();
             textoResultado.text = $"Respuestas correctas: {respuestasCorrectas}/10\nPorcentaje: {porcentaje}%\n Aprobaste el quiz!";
         }

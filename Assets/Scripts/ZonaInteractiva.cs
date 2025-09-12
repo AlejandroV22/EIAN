@@ -53,6 +53,28 @@ public class ZonaInteractiva : MonoBehaviour, IPointerEnterHandler, IPointerExit
                 Debug.Log("El quiz fue aprobado. Abriendo nueva ruta");
                 
                 break;
+            case 3:
+                if (PlayerPrefs.GetInt("QuizAprobado_" + nombreTema, 0) == 0)
+                {
+                    Debug.Log("Faltan resolver el quiz  para este tema.");
+                    panelAdvertencia.MostrarMensaje("Debes aprobar el quiz 2 para poder acceder.");
+                    return;
+                }
+                SceneManager.LoadScene(nombreEscena);
+                Debug.Log("El quiz fue aprobado. Abriendo nueva ruta");
+                
+                break;
+            case 4:
+                if (PlayerPrefs.GetInt("QuizAprobado_" + nombreTema, 0) == 0)
+                {
+                    Debug.Log("Faltan resolver el quiz  para este tema.");
+                    panelAdvertencia.MostrarMensaje("Debes aprobar el quiz 3 para poder acceder.");
+                    return;
+                }
+                SceneManager.LoadScene(nombreEscena);
+                Debug.Log("El quiz fue aprobado. Abriendo nueva ruta");
+                
+                break;  
             default:
                 return;
             }

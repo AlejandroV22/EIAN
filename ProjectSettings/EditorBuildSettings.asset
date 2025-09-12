@@ -12,6 +12,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Recorte3.unity
     guid: 074eb61656b4d7740b095d8477114d93
   - enabled: 1
+    path: Assets/Scenes/Recorte4.unity
+    guid: 82928d417b3581943a9e50ba2248b201
+  - enabled: 1
+    path: Assets/Scenes/Recorte5.unity
+    guid: 5556d6c1eb20c844c99965f32fee9475
+  - enabled: 1
     path: Assets/Scenes/Recorte8.unity
     guid: 7b895dfdf6d8ace4782956e5acc77e36
   - enabled: 1
@@ -20,6 +26,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Quiz1.unity
     guid: 80ff9aa720e79394f9745d1c9db0bf16
+  - enabled: 1
+    path: Assets/Scenes/Quiz2.unity
+    guid: 132b691308d9e8c43a85b98ad41ee479
+  - enabled: 1
+    path: Assets/Scenes/Quiz3.unity
+    guid: b34f08c7c4378164797c42f6e71404e2
   - enabled: 1
     path: Assets/Scenes/CortePuente.unity
     guid: dca2c411db1b39245b7cb9b607567af5

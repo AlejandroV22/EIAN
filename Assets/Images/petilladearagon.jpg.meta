@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      petilladearagon_0: 46771985622719385
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
