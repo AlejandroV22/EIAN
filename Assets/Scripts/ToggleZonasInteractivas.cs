@@ -11,6 +11,9 @@ public class ToggleZonasInteractivas : MonoBehaviour
     // Guardar alpha original de cada imagen
     private Dictionary<Image, float> alphaOriginal = new Dictionary<Image, float>();
 
+    // bandera global
+    public static bool zonasActivas = true;
+
     void Start()
     {
         if (zonasInteractivas != null)
@@ -34,6 +37,8 @@ public class ToggleZonasInteractivas : MonoBehaviour
 
     void ToggleZonas(bool estado)
     {
+        zonasActivas = estado; // 🔑 actualiza la bandera
+
         if (zonasInteractivas != null)
         {
             foreach (Transform child in zonasInteractivas.transform)
@@ -42,12 +47,8 @@ public class ToggleZonasInteractivas : MonoBehaviour
                 if (image != null && alphaOriginal.ContainsKey(image))
                 {
                     Color color = image.color;
-                    // Restaurar su alpha original o ponerlo en 0
                     color.a = estado ? alphaOriginal[image] : 0f;
                     image.color = color;
-
-                        // Activar o desactivar la interactividad
-                    image.raycastTarget = true;
                 }
             }
         }
