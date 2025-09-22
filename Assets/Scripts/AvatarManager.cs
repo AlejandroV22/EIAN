@@ -30,7 +30,6 @@ public class AvatarManager : MonoBehaviour
             if (PlayerPrefs.GetInt("QuizAprobado_" + tema, 0) == 1)
             {
                 aprobados++;
-                Debug.Log(aprobados);
             }
         }
 
