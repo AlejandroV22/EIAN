@@ -13,7 +13,7 @@ public class DeslizarPanel : MonoBehaviour
 
     private Vector2 posicionInicial;
     private Vector2 posicionEscondida;
-    private bool estaAbierto = true;
+    
 
     void Start()
     {
@@ -35,7 +35,6 @@ public class DeslizarPanel : MonoBehaviour
         StopAllCoroutines();
         StartCoroutine(MoverPanel(posicionEscondida));
         botonAbrir.gameObject.SetActive(true);
-        estaAbierto = false;
     }
 
     void AbrirPanel()
@@ -43,7 +42,6 @@ public class DeslizarPanel : MonoBehaviour
         StopAllCoroutines();
         StartCoroutine(MoverPanel(posicionInicial));
         botonAbrir.gameObject.SetActive(false);
-        estaAbierto = true;
     }
 
     IEnumerator MoverPanel(Vector2 destino)
