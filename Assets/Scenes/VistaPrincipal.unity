@@ -246,11 +246,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8011901668767223618, guid: 5eccde1fda8387945a6645146f805dc7, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 720
+      value: 646.6664
       objectReference: {fileID: 0}
     - target: {fileID: 8011901668767223618, guid: 5eccde1fda8387945a6645146f805dc7, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 720
+      value: 667.53
       objectReference: {fileID: 0}
     - target: {fileID: 8011901668767223618, guid: 5eccde1fda8387945a6645146f805dc7, type: 3}
       propertyPath: m_LocalScale.x
@@ -290,11 +290,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8011901668767223618, guid: 5eccde1fda8387945a6645146f805dc7, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: -2.2222
       objectReference: {fileID: 0}
     - target: {fileID: 8011901668767223618, guid: 5eccde1fda8387945a6645146f805dc7, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -0.00032949
       objectReference: {fileID: 0}
     - target: {fileID: 8011901668767223618, guid: 5eccde1fda8387945a6645146f805dc7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -311,7 +311,7 @@ PrefabInstance:
     - target: {fileID: 8751734652614273279, guid: 5eccde1fda8387945a6645146f805dc7, type: 3}
       propertyPath: m_Texture
       value: 
-      objectReference: {fileID: 2800000, guid: 3dc07df443947e540a32167be206a8a3, type: 3}
+      objectReference: {fileID: 2800000, guid: 2a54b6d317ef3c14896713fb80e52f18, type: 3}
     - target: {fileID: 8751734652614273279, guid: 5eccde1fda8387945a6645146f805dc7, type: 3}
       propertyPath: m_RaycastTarget
       value: 1
@@ -552,38 +552,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_RenderShadows: 1
-  m_RequiresDepthTextureOption: 2
-  m_RequiresOpaqueTextureOption: 2
-  m_CameraType: 0
-  m_Cameras: []
-  m_RendererIndex: -1
-  m_VolumeLayerMask:
-    serializedVersion: 2
-    m_Bits: 1
-  m_VolumeTrigger: {fileID: 0}
-  m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
-  m_Antialiasing: 0
-  m_AntialiasingQuality: 2
-  m_StopNaN: 0
-  m_Dithering: 0
-  m_ClearDepth: 1
-  m_AllowXRRendering: 1
-  m_AllowHDROutput: 1
-  m_UseScreenCoordOverride: 0
-  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
-  m_RequiresDepthTexture: 0
-  m_RequiresColorTexture: 0
-  m_Version: 2
-  m_TaaSettings:
-    m_Quality: 3
-    m_FrameInfluence: 0.1
-    m_JitterScale: 1
-    m_MipBias: 0
-    m_VarianceClampScale: 0.9
-    m_ContrastAdaptiveSharpening: 0
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -679,46 +647,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ComponentVersion: 2
-  m_LightType: 4
-  m_BlendStyleIndex: 0
-  m_FalloffIntensity: 0.5
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
-  m_LightVolumeIntensity: 1
-  m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 00000000
-  m_LightCookieSprite: {fileID: 0}
-  m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
-  m_AlphaBlendOnOverlap: 0
-  m_OverlapOperation: 0
-  m_NormalMapDistance: 3
-  m_NormalMapQuality: 2
-  m_UseNormalMap: 0
-  m_ShadowsEnabled: 0
-  m_ShadowIntensity: 0.75
-  m_ShadowSoftness: 0
-  m_ShadowSoftnessFalloffIntensity: 0.5
-  m_ShadowVolumeIntensityEnabled: 0
-  m_ShadowVolumeIntensity: 0.75
-  m_LocalBounds:
-    m_Center: {x: 0, y: -0.00000011920929, z: 0}
-    m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
-  m_PointLightInnerAngle: 360
-  m_PointLightOuterAngle: 360
-  m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 1
-  m_ShapeLightParametricSides: 5
-  m_ShapeLightParametricAngleOffset: 0
-  m_ShapeLightParametricRadius: 1
-  m_ShapeLightFalloffSize: 0.5
-  m_ShapeLightFalloffOffset: {x: 0, y: 0}
-  m_ShapePath:
-  - {x: -0.5, y: -0.5, z: 0}
-  - {x: 0.5, y: -0.5, z: 0}
-  - {x: 0.5, y: 0.5, z: 0}
-  - {x: -0.5, y: 0.5, z: 0}
 --- !u!4 &619394802
 Transform:
   m_ObjectHideFlags: 0
@@ -944,15 +872,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9162815392540484975, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 35
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 9162815392540484975, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 9162815392540484975, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9162815392540484975, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 9162815392540484975, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1033,7 +965,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6affde8add799b4caf990b4402c9db0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverColor: {r: 1, g: 1, b: 1, a: 0.3}
   nombreEscena: Recorte4
   panelAdvertencia: {fileID: 1710212153}
   zonaID: 4
@@ -1441,15 +1372,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9162815392540484975, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 35
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 9162815392540484975, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 9162815392540484975, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9162815392540484975, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 9162815392540484975, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1530,7 +1465,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6affde8add799b4caf990b4402c9db0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverColor: {r: 1, g: 1, b: 1, a: 0.3}
   nombreEscena: Recorte4
   panelAdvertencia: {fileID: 1710212153}
   zonaID: 3
@@ -1607,15 +1541,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9162815392540484975, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 35
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 9162815392540484975, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 9162815392540484975, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9162815392540484975, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 9162815392540484975, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1696,7 +1634,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6affde8add799b4caf990b4402c9db0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverColor: {r: 1, g: 1, b: 1, a: 0.3}
   nombreEscena: Recorte8
   panelAdvertencia: {fileID: 1710212153}
   zonaID: 2
@@ -1806,6 +1743,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 251443195}
     m_Modifications:
+    - target: {fileID: 3553973410993547867, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
+      propertyPath: m_Color.a
+      value: 0.3882353
+      objectReference: {fileID: 0}
+    - target: {fileID: 3553973410993547867, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
+      propertyPath: m_Color.b
+      value: 0.31959772
+      objectReference: {fileID: 0}
+    - target: {fileID: 3553973410993547867, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
+      propertyPath: m_Color.g
+      value: 0.31959772
+      objectReference: {fileID: 0}
+    - target: {fileID: 3553973410993547867, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
+      propertyPath: m_Color.r
+      value: 0.3962264
+      objectReference: {fileID: 0}
     - target: {fileID: 5597142459016686881, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: panel
       value: 
@@ -1865,15 +1818,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9162815392540484975, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 35
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 9162815392540484975, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 9162815392540484975, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9162815392540484975, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 9162815392540484975, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1954,7 +1911,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6affde8add799b4caf990b4402c9db0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverColor: {r: 1, g: 1, b: 1, a: 0.3}
   nombreEscena: CortePuente
   panelAdvertencia: {fileID: 0}
   zonaID: 1

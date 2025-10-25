@@ -1,11 +1,10 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class ZonaInteractiva : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
 {
-    private Image image;
+    private UIPolygon polygon;              // reemplaza Image
     private Color originalColor;
     private float originalAlpha;
 
@@ -14,37 +13,48 @@ public class ZonaInteractiva : MonoBehaviour, IPointerEnterHandler, IPointerExit
 
     [Header("Tracking")]
     public int zonaID;
-    public string nombreTema; 
+    public string nombreTema;
 
     void Start()
     {
-        image = GetComponent<Image>();
-        originalColor = image.color;
-        originalAlpha = image.color.a;
+        polygon = GetComponent<UIPolygon>();
+        if (polygon == null)
+        {
+            Debug.LogError($"[ZonaInteractiva] No se encontró un componente UIPolygon en {gameObject.name}");
+            enabled = false;
+            return;
+        }
+
+        originalColor = polygon.color;
+        originalAlpha = polygon.color.a;
     }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        // Solo si las zonas están activas (toggle encendido)
-        if (ToggleZonasInteractivas.zonasActivas && image.color.a > 0)
+        if (ToggleZonasInteractivas.zonasActivas && polygon.color.a > 0)
         {
             Color hoverColor = originalColor;
             hoverColor.a = Mathf.Clamp01(originalAlpha + 0.3f); // menos transparencia
-            image.color = hoverColor;
+            polygon.color = hoverColor;
+            polygon.SetVerticesDirty(); // fuerza a redibujar el color actualizado
         }
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        if (ToggleZonasInteractivas.zonasActivas && image.color.a > 0)
+        if (ToggleZonasInteractivas.zonasActivas && polygon.color.a > 0)
         {
-            image.color = originalColor;
+            polygon.color = originalColor;
+            polygon.SetVerticesDirty();
         }
     }
 
     public void OnPointerClick(PointerEventData eventData)
-    { 
-        switch(zonaID) 
+    {
+        if (!ToggleZonasInteractivas.zonasActivas)
+            return;
+
+        switch (zonaID)
         {
             case 1:
                 SceneManager.LoadScene(nombreEscena);
@@ -72,7 +82,7 @@ public class ZonaInteractiva : MonoBehaviour, IPointerEnterHandler, IPointerExit
                     return;
                 }
                 SceneManager.LoadScene(nombreEscena);
-                break;  
+                break;
             default:
                 return;
         }

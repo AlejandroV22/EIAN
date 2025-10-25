@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityEngine.UI;
 
 public class ZonaInteractiva2 : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
 {
@@ -11,43 +10,56 @@ public class ZonaInteractiva2 : MonoBehaviour, IPointerEnterHandler, IPointerExi
     public string zonaID;
     public string temaID;
 
-    private Image image;
+    private UIPolygon polygon;
     private Color originalColor;
     private float originalAlpha;
 
     void Start()
     {
-        image = GetComponent<Image>();
-        originalColor = image.color;
-        originalAlpha = image.color.a;
+        polygon = GetComponent<UIPolygon>();
+        if (polygon == null)
+        {
+            Debug.LogError($"[ZonaInteractiva2] No se encontró un componente UIPolygon en {gameObject.name}");
+            enabled = false;
+            return;
+        }
+
+        originalColor = polygon.color;
+        originalAlpha = polygon.color.a;
     }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        if (ToggleZonasInteractivas.zonasActivas && image.color.a > 0)
+        if (ToggleZonasInteractivas.zonasActivas && polygon.color.a > 0)
         {
             Color hoverColor = originalColor;
             hoverColor.a = Mathf.Clamp01(originalAlpha + 0.3f);
-            image.color = hoverColor;
+            polygon.color = hoverColor;
+            polygon.SetVerticesDirty(); // actualiza visualmente el color
         }
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        if (ToggleZonasInteractivas.zonasActivas && image.color.a > 0)
+        if (ToggleZonasInteractivas.zonasActivas && polygon.color.a > 0)
         {
-            image.color = originalColor;
+            polygon.color = originalColor;
+            polygon.SetVerticesDirty();
         }
     }
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        panel.MostrarInformacion(infoTexto);
+        if (panel != null)
+        {
+            panel.MostrarInformacion(infoTexto);
+        }
+
         Debug.Log("Clic detectado en: " + gameObject.name);
 
         if (!string.IsNullOrEmpty(zonaID))
         {
-            PlayerPrefs.SetInt("ZonaVisitada_" + zonaID, 1); 
+            PlayerPrefs.SetInt("ZonaVisitada_" + zonaID, 1);
             PlayerPrefs.Save();
             Debug.Log("Zona marcada como visitada: " + zonaID);
         }
