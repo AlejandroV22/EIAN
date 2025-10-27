@@ -8,10 +8,10 @@ public class ToggleZonasInteractivas : MonoBehaviour
     public Toggle toggle;
     public GameObject zonasInteractivas;
 
-    // Guardar alpha original de cada imagen
-    private Dictionary<Image, float> alphaOriginal = new Dictionary<Image, float>();
+    // Guarda alpha original de cada gráfico (Image o UIPolygon)
+    private Dictionary<Graphic, float> alphaOriginal = new Dictionary<Graphic, float>();
 
-    // bandera global
+    // Bandera global accesible desde otros scripts
     public static bool zonasActivas = true;
 
     void Start()
@@ -20,10 +20,11 @@ public class ToggleZonasInteractivas : MonoBehaviour
         {
             foreach (Transform child in zonasInteractivas.transform)
             {
-                Image image = child.GetComponent<Image>();
-                if (image != null && !alphaOriginal.ContainsKey(image))
+                // Buscamos cualquier componente que herede de Graphic
+                Graphic graphic = child.GetComponent<Graphic>();
+                if (graphic != null && !alphaOriginal.ContainsKey(graphic))
                 {
-                    alphaOriginal[image] = image.color.a;
+                    alphaOriginal[graphic] = graphic.color.a;
                 }
             }
         }
@@ -37,18 +38,18 @@ public class ToggleZonasInteractivas : MonoBehaviour
 
     void ToggleZonas(bool estado)
     {
-        zonasActivas = estado; // 🔑 actualiza la bandera
+        zonasActivas = estado; // 🔑 actualiza la bandera global
 
         if (zonasInteractivas != null)
         {
             foreach (Transform child in zonasInteractivas.transform)
             {
-                Image image = child.GetComponent<Image>();
-                if (image != null && alphaOriginal.ContainsKey(image))
+                Graphic graphic = child.GetComponent<Graphic>();
+                if (graphic != null && alphaOriginal.ContainsKey(graphic))
                 {
-                    Color color = image.color;
-                    color.a = estado ? alphaOriginal[image] : 0f;
-                    image.color = color;
+                    Color color = graphic.color;
+                    color.a = estado ? alphaOriginal[graphic] : 0f;
+                    graphic.color = color;
                 }
             }
         }
