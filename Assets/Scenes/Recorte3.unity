@@ -157,12 +157,12 @@ PrefabInstance:
       objectReference: {fileID: 140399504}
     - target: {fileID: 5597142459016686881, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: infoTexto
-      value: "<b><size=120%>N\xDACLEO AMBIGUO</size></b><br><br>  <b>Generalidades:</b>
-        N\xFAcleo motor som\xE1tico que aporta fibras a los nervios glosofar\xEDngeo
-        (IX), vago (X) y accesorio (XI). Participa en la degluci\xF3n y la fonaci\xF3n.<br><br> 
-        <b>Principales aferencias:</b> Corteza cerebral por v\xEDa corticobulbar.<br><br> 
-        <b>Principales eferencias:</b> M\xFAsculos estriados de la faringe, laringe
-        y paladar.<br><br><br>"
+      value: "<b><size=120%>FASC\xCDCULO LONGITUDINAL MEDIAL</size></b><br><br> 
+        <b>Generalidades:</b> Conecta n\xFAcleos vestibulares, oculomotores y cervicales,
+        coordinando los movimientos sincronizados de ojos, cabeza y cuello durante
+        reflejos visuales y vestibulares.<br><br>  <b>Principales aferencias:</b>
+        N\xFAcleos vestibulares y col\xEDculos superiores.<br><br>  <b>Principales
+        eferencias:</b> N\xFAcleos oculomotores (III, IV, VI) y asta anterior cervical.<br><br><br> "
       objectReference: {fileID: 0}
     - target: {fileID: 7264986227520560567, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_Name
@@ -222,7 +222,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9162815392540484975, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.9962588
       objectReference: {fileID: 0}
     - target: {fileID: 9162815392540484975, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_LocalRotation.x
@@ -234,15 +234,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9162815392540484975, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0.086420454
       objectReference: {fileID: 0}
     - target: {fileID: 9162815392540484975, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -7.9620466
+      value: -1.77
       objectReference: {fileID: 0}
     - target: {fileID: 9162815392540484975, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -35.6
+      value: -29.73
       objectReference: {fileID: 0}
     - target: {fileID: 9162815392540484975, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -254,7 +254,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9162815392540484975, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 9.915
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1574,6 +1574,15 @@ PrefabInstance:
       propertyPath: panel
       value: 
       objectReference: {fileID: 140399504}
+    - target: {fileID: 5597142459016686881, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
+      propertyPath: infoTexto
+      value: "<b><size=120%>N\xDACLEO AMBIGUO</size></b><br><br>  <b>Generalidades:</b>
+        N\xFAcleo motor som\xE1tico que aporta fibras a los nervios glosofar\xEDngeo
+        (IX), vago (X) y accesorio (XI). Participa en la degluci\xF3n y la fonaci\xF3n.<br><br> 
+        <b>Principales aferencias:</b> Corteza cerebral por v\xEDa corticobulbar.<br><br> 
+        <b>Principales eferencias:</b> M\xFAsculos estriados de la faringe, laringe
+        y paladar.<br><br><br>"
+      objectReference: {fileID: 0}
     - target: {fileID: 7264986227520560567, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_Name
       value: Seccion8
@@ -1875,10 +1884,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.14509805, b: 1, a: 0.5686275}
+  m_Color: {r: 1, g: 0, b: 0, a: 0.5686275}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  vectorColor: {r: 0, g: 0.14509805, b: 1, a: 0.5686275}
+  vectorColor: {r: 1, g: 0, b: 0, a: 0.5686275}
   points:
   - {x: 100, y: 0}
   - {x: 99.51847, y: 4.900857}
@@ -2702,6 +2711,16 @@ PrefabInstance:
       propertyPath: panel
       value: 
       objectReference: {fileID: 140399504}
+    - target: {fileID: 5597142459016686881, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
+      propertyPath: infoTexto
+      value: "<b><size=120%>N\xDACLEO GR\xC1CIL</size></b><br><br>  <b>Generalidades:</b>
+        N\xFAcleo del bulbo raqu\xEDdeo donde terminan las fibras del fasc\xEDculo
+        gr\xE1cil que conducen sensibilidad fina, vibraci\xF3n y propiocepci\xF3n
+        consciente de T7 hacia abajo.<br><br>  <b>Principales aferencias:</b> Neuronas
+        pseudounipolares de la m\xE9dula espinal.<br><br>  <b>Principales eferencias:</b>
+        Fibras arcuatas internas que se decusan en el bulbo y ascienden como lemnisco
+        medial hacia el VPL del t\xE1lamo.<br><br><br>"
+      objectReference: {fileID: 0}
     - target: {fileID: 7264986227520560567, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_Name
       value: Seccion12
@@ -2768,11 +2787,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9162815392540484975, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 8
+      value: 20.2
       objectReference: {fileID: 0}
     - target: {fileID: 9162815392540484975, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -50.9
+      value: -41.8
       objectReference: {fileID: 0}
     - target: {fileID: 9162815392540484975, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2959,10 +2978,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.14509805, b: 1, a: 0.5686275}
+  m_Color: {r: 1, g: 0, b: 0, a: 0.5686275}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  vectorColor: {r: 0, g: 0.14509805, b: 1, a: 0.5686275}
+  vectorColor: {r: 1, g: 0, b: 0, a: 0.5686275}
   points:
   - {x: 100, y: 0}
   - {x: 99.51847, y: 4.900857}
@@ -4227,6 +4246,10 @@ PrefabInstance:
       propertyPath: panel
       value: 
       objectReference: {fileID: 140399504}
+    - target: {fileID: 5597142459016686881, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
+      propertyPath: infoTexto
+      value: Incompleto.
+      objectReference: {fileID: 0}
     - target: {fileID: 7264986227520560567, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_Name
       value: Seccion18
@@ -6646,6 +6669,15 @@ PrefabInstance:
       propertyPath: panel
       value: 
       objectReference: {fileID: 140399504}
+    - target: {fileID: 5597142459016686881, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
+      propertyPath: infoTexto
+      value: "<b><size=120%>N\xDACLEO AMBIGUO</size></b><br><br>  <b>Generalidades:</b>
+        N\xFAcleo motor som\xE1tico que aporta fibras a los nervios glosofar\xEDngeo
+        (IX), vago (X) y accesorio (XI). Participa en la degluci\xF3n y la fonaci\xF3n.<br><br> 
+        <b>Principales aferencias:</b> Corteza cerebral por v\xEDa corticobulbar.<br><br> 
+        <b>Principales eferencias:</b> M\xFAsculos estriados de la faringe, laringe
+        y paladar.<br><br><br>"
+      objectReference: {fileID: 0}
     - target: {fileID: 7264986227520560567, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_Name
       value: Seccion8
@@ -7287,6 +7319,15 @@ PrefabInstance:
       propertyPath: panel
       value: 
       objectReference: {fileID: 140399504}
+    - target: {fileID: 5597142459016686881, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
+      propertyPath: infoTexto
+      value: "<b><size=120%>N\xDACLEO ESPINAL DEL TRIG\xC9MINO</size></b><br><br> 
+        <b>Generalidades:</b> N\xFAcleo sensitivo del nervio trig\xE9mino (V) que
+        procesa dolor, temperatura y tacto grosero de la cara. Se extiende desde
+        el bulbo hasta C3.<br><br>  <b>Principales aferencias:</b> Fibras sensitivas
+        de los nervios V, VII, IX y X.<br><br>  <b>Principales eferencias:</b> Lemnisco
+        trigeminal hacia el n\xFAcleo ventral posterolateral del t\xE1lamo.<br><br><br>"
+      objectReference: {fileID: 0}
     - target: {fileID: 7264986227520560567, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_Name
       value: Seccion17
@@ -7428,6 +7469,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
+  m_TaaSettings:
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -7685,12 +7758,12 @@ PrefabInstance:
       objectReference: {fileID: 140399504}
     - target: {fileID: 5597142459016686881, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: infoTexto
-      value: "<b><size=120%>N\xDACLEO AMBIGUO</size></b><br><br>  <b>Generalidades:</b>
-        N\xFAcleo motor som\xE1tico que aporta fibras a los nervios glosofar\xEDngeo
-        (IX), vago (X) y accesorio (XI). Participa en la degluci\xF3n y la fonaci\xF3n.<br><br> 
-        <b>Principales aferencias:</b> Corteza cerebral por v\xEDa corticobulbar.<br><br> 
-        <b>Principales eferencias:</b> M\xFAsculos estriados de la faringe, laringe
-        y paladar.<br><br><br>"
+      value: "<b><size=120%>FASC\xCDCULO LONGITUDINAL MEDIAL</size></b><br><br> 
+        <b>Generalidades:</b> Conecta n\xFAcleos vestibulares, oculomotores y cervicales,
+        coordinando los movimientos sincronizados de ojos, cabeza y cuello durante
+        reflejos visuales y vestibulares.<br><br>  <b>Principales aferencias:</b>
+        N\xFAcleos vestibulares y col\xEDculos superiores.<br><br>  <b>Principales
+        eferencias:</b> N\xFAcleos oculomotores (III, IV, VI) y asta anterior cervical.<br><br><br> "
       objectReference: {fileID: 0}
     - target: {fileID: 7264986227520560567, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_Name
@@ -8058,6 +8131,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_ComponentVersion: 2
+  m_LightType: 3
+  m_BlendStyleIndex: 0
+  m_FalloffIntensity: 0.5
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1
+  m_LightVolumeIntensity: 1
+  m_LightVolumeEnabled: 1
+  m_ApplyToSortingLayers: 0000000041dc298e9d615d76
+  m_LightCookieSprite: {fileID: 0}
+  m_DeprecatedPointLightCookieSprite: {fileID: 0}
+  m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
+  m_OverlapOperation: 0
+  m_NormalMapDistance: 3
+  m_NormalMapQuality: 2
+  m_UseNormalMap: 0
+  m_ShadowsEnabled: 1
+  m_ShadowIntensity: 0.75
+  m_ShadowSoftness: 0
+  m_ShadowSoftnessFalloffIntensity: 0.5
+  m_ShadowVolumeIntensityEnabled: 1
+  m_ShadowVolumeIntensity: 0.75
+  m_LocalBounds:
+    m_Center: {x: 0, y: -0.00000011920929, z: 0}
+    m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
+  m_PointLightInnerAngle: 360
+  m_PointLightOuterAngle: 360
+  m_PointLightInnerRadius: 0
+  m_PointLightOuterRadius: 1
+  m_ShapeLightParametricSides: 5
+  m_ShapeLightParametricAngleOffset: 0
+  m_ShapeLightParametricRadius: 1
+  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffOffset: {x: 0, y: 0}
+  m_ShapePath: []
 --- !u!4 &619394802
 Transform:
   m_ObjectHideFlags: 0
@@ -8096,10 +8205,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.14509805, b: 1, a: 0.5686275}
+  m_Color: {r: 1, g: 0, b: 0, a: 0.5686275}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  vectorColor: {r: 0, g: 0.14509805, b: 1, a: 0.5686275}
+  vectorColor: {r: 1, g: 0, b: 0, a: 0.5686275}
   points:
   - {x: 100, y: 0}
   - {x: 99.51847, y: 4.900857}
@@ -9511,10 +9620,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.14509805, b: 1, a: 0.5686275}
+  m_Color: {r: 1, g: 0, b: 0, a: 0.5686275}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  vectorColor: {r: 0, g: 0.14509805, b: 1, a: 0.5686275}
+  vectorColor: {r: 1, g: 0, b: 0, a: 0.5686275}
   points:
   - {x: 100, y: 0}
   - {x: 99.51847, y: 4.900857}
@@ -11359,11 +11468,12 @@ PrefabInstance:
       objectReference: {fileID: 140399504}
     - target: {fileID: 5597142459016686881, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: infoTexto
-      value: "<b>Pir\xE1mides bulbares:</b> Formadas por el fasc\xEDculo corticoespinal
-        que desciende desde la corteza motora primaria (\xE1rea 4). <b>Principales
-        aferencias:</b> Corteza motora primaria (\xE1rea 4 de Brodmann). <b>Principales
-        eferencias:</b> Asta anterior de la m\xE9dula espinal (l\xE1minas VIII y
-        IX de Rexed)."
+      value: "<b><size=120%>N\xDACLEO AMBIGUO</size></b><br><br>  <b>Generalidades:</b>
+        N\xFAcleo motor som\xE1tico que aporta fibras a los nervios glosofar\xEDngeo
+        (IX), vago (X) y accesorio (XI). Participa en la degluci\xF3n y la fonaci\xF3n.<br><br> 
+        <b>Principales aferencias:</b> Corteza cerebral por v\xEDa corticobulbar.<br><br> 
+        <b>Principales eferencias:</b> M\xFAsculos estriados de la faringe, laringe
+        y paladar.<br><br><br>"
       objectReference: {fileID: 0}
     - target: {fileID: 7264986227520560567, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_Name
@@ -11995,6 +12105,15 @@ PrefabInstance:
       propertyPath: panel
       value: 
       objectReference: {fileID: 140399504}
+    - target: {fileID: 5597142459016686881, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
+      propertyPath: infoTexto
+      value: "<b><size=120%>N\xDACLEO CUNEATUS</size></b><br><br>  <b>Generalidades:</b>
+        N\xFAcleo lateral al gr\xE1cil que recibe las fibras del fasc\xEDculo cuneatus
+        (C2\u2013T6), encargado de transmitir sensibilidad fina, vibraci\xF3n y propiocepci\xF3n
+        consciente.<br><br>  <b>Principales aferencias:</b> Neuronas pseudounipolares
+        de la m\xE9dula espinal.<br><br>  <b>Principales eferencias:</b> Fibras arcuatas
+        internas que cruzan y ascienden como lemnisco medial hacia el VPL del t\xE1lamo.<br><br><br>"
+      objectReference: {fileID: 0}
     - target: {fileID: 7264986227520560567, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_Name
       value: Seccion15
@@ -12061,11 +12180,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9162815392540484975, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -56.5
+      value: -51.2
       objectReference: {fileID: 0}
     - target: {fileID: 9162815392540484975, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -49.9
+      value: -57.4
       objectReference: {fileID: 0}
     - target: {fileID: 9162815392540484975, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -12617,6 +12736,10 @@ PrefabInstance:
       propertyPath: panel
       value: 
       objectReference: {fileID: 140399504}
+    - target: {fileID: 5597142459016686881, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
+      propertyPath: infoTexto
+      value: Incompleto
+      objectReference: {fileID: 0}
     - target: {fileID: 7264986227520560567, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_Name
       value: Seccion20
@@ -15235,7 +15358,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9162815392540484975, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.9986028
       objectReference: {fileID: 0}
     - target: {fileID: 9162815392540484975, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_LocalRotation.x
@@ -15247,15 +15370,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9162815392540484975, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0.052843567
       objectReference: {fileID: 0}
     - target: {fileID: 9162815392540484975, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -7.9620466
+      value: -6.2
       objectReference: {fileID: 0}
     - target: {fileID: 9162815392540484975, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 4.6
+      value: 4.7
       objectReference: {fileID: 0}
     - target: {fileID: 9162815392540484975, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -15267,7 +15390,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9162815392540484975, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 6.058
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18778,6 +18901,15 @@ PrefabInstance:
       propertyPath: panel
       value: 
       objectReference: {fileID: 140399504}
+    - target: {fileID: 5597142459016686881, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
+      propertyPath: infoTexto
+      value: "<b><size=120%>N\xDACLEO CUNEATUS</size></b><br><br>  <b>Generalidades:</b>
+        N\xFAcleo lateral al gr\xE1cil que recibe las fibras del fasc\xEDculo cuneatus
+        (C2\u2013T6), encargado de transmitir sensibilidad fina, vibraci\xF3n y propiocepci\xF3n
+        consciente.<br><br>  <b>Principales aferencias:</b> Neuronas pseudounipolares
+        de la m\xE9dula espinal.<br><br>  <b>Principales eferencias:</b> Fibras arcuatas
+        internas que cruzan y ascienden como lemnisco medial hacia el VPL del t\xE1lamo.<br><br><br>"
+      objectReference: {fileID: 0}
     - target: {fileID: 7264986227520560567, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_Name
       value: Seccion13
@@ -18844,11 +18976,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9162815392540484975, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 35.3
+      value: 49.1
       objectReference: {fileID: 0}
     - target: {fileID: 9162815392540484975, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -50.9
+      value: -44.3
       objectReference: {fileID: 0}
     - target: {fileID: 9162815392540484975, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -19818,6 +19950,16 @@ PrefabInstance:
       propertyPath: panel
       value: 
       objectReference: {fileID: 140399504}
+    - target: {fileID: 5597142459016686881, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
+      propertyPath: infoTexto
+      value: "<b><size=120%>N\xDACLEO GR\xC1CIL</size></b><br><br>  <b>Generalidades:</b>
+        N\xFAcleo del bulbo raqu\xEDdeo donde terminan las fibras del fasc\xEDculo
+        gr\xE1cil que conducen sensibilidad fina, vibraci\xF3n y propiocepci\xF3n
+        consciente de T7 hacia abajo.<br><br>  <b>Principales aferencias:</b> Neuronas
+        pseudounipolares de la m\xE9dula espinal.<br><br>  <b>Principales eferencias:</b>
+        Fibras arcuatas internas que se decusan en el bulbo y ascienden como lemnisco
+        medial hacia el VPL del t\xE1lamo.<br><br><br>"
+      objectReference: {fileID: 0}
     - target: {fileID: 7264986227520560567, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_Name
       value: Seccion16
@@ -19888,7 +20030,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9162815392540484975, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -52.6
+      value: -41.800003
       objectReference: {fileID: 0}
     - target: {fileID: 9162815392540484975, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -20075,10 +20217,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.14509805, b: 1, a: 0.5686275}
+  m_Color: {r: 1, g: 0, b: 0, a: 0.5686275}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  vectorColor: {r: 0, g: 0.14509805, b: 1, a: 0.5686275}
+  vectorColor: {r: 1, g: 0, b: 0, a: 0.5686275}
   points:
   - {x: 100, y: 0}
   - {x: 99.51847, y: 4.900857}
@@ -20446,10 +20588,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.14509805, b: 1, a: 0.5686275}
+  m_Color: {r: 1, g: 0, b: 0, a: 0.5686275}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  vectorColor: {r: 0, g: 0.14509805, b: 1, a: 0.5686275}
+  vectorColor: {r: 1, g: 0, b: 0, a: 0.5686275}
   points:
   - {x: 100, y: 0}
   - {x: 99.51847, y: 4.900857}
@@ -20564,7 +20706,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -5.3, y: 7.3}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1891163298
@@ -21095,6 +21237,10 @@ PrefabInstance:
       propertyPath: panel
       value: 
       objectReference: {fileID: 140399504}
+    - target: {fileID: 5597142459016686881, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
+      propertyPath: infoTexto
+      value: Incompleto
+      objectReference: {fileID: 0}
     - target: {fileID: 7264986227520560567, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_Name
       value: Seccion19
@@ -21725,6 +21871,15 @@ PrefabInstance:
       propertyPath: panel
       value: 
       objectReference: {fileID: 140399504}
+    - target: {fileID: 5597142459016686881, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
+      propertyPath: infoTexto
+      value: "<b><size=120%>N\xDACLEO ESPINAL DEL TRIG\xC9MINO</size></b><br><br> 
+        <b>Generalidades:</b> N\xFAcleo sensitivo del nervio trig\xE9mino (V) que
+        procesa dolor, temperatura y tacto grosero de la cara. Se extiende desde
+        el bulbo hasta C3.<br><br>  <b>Principales aferencias:</b> Fibras sensitivas
+        de los nervios V, VII, IX y X.<br><br>  <b>Principales eferencias:</b> Lemnisco
+        trigeminal hacia el n\xFAcleo ventral posterolateral del t\xE1lamo.<br><br><br>"
+      objectReference: {fileID: 0}
     - target: {fileID: 7264986227520560567, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_Name
       value: Seccion14
@@ -21799,11 +21954,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9162815392540484975, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 58.3
+      value: 71.1
       objectReference: {fileID: 0}
     - target: {fileID: 9162815392540484975, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -31.4
+      value: -27
       objectReference: {fileID: 0}
     - target: {fileID: 9162815392540484975, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -23170,6 +23325,10 @@ PrefabInstance:
       propertyPath: panel
       value: 
       objectReference: {fileID: 140399504}
+    - target: {fileID: 5597142459016686881, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
+      propertyPath: infoTexto
+      value: Incompleto
+      objectReference: {fileID: 0}
     - target: {fileID: 7264986227520560567, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_Name
       value: Seccion17
@@ -24528,11 +24687,12 @@ PrefabInstance:
       objectReference: {fileID: 140399504}
     - target: {fileID: 5597142459016686881, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: infoTexto
-      value: "<b>Pir\xE1mides bulbares:</b> Formadas por el fasc\xEDculo corticoespinal
-        que desciende desde la corteza motora primaria (\xE1rea 4). <b>Principales
-        aferencias:</b> Corteza motora primaria (\xE1rea 4 de Brodmann). <b>Principales
-        eferencias:</b> Asta anterior de la m\xE9dula espinal (l\xE1minas VIII y
-        IX de Rexed)."
+      value: "<b><size=120%>N\xDACLEO AMBIGUO</size></b><br><br>  <b>Generalidades:</b>
+        N\xFAcleo motor som\xE1tico que aporta fibras a los nervios glosofar\xEDngeo
+        (IX), vago (X) y accesorio (XI). Participa en la degluci\xF3n y la fonaci\xF3n.<br><br> 
+        <b>Principales aferencias:</b> Corteza cerebral por v\xEDa corticobulbar.<br><br> 
+        <b>Principales eferencias:</b> M\xFAsculos estriados de la faringe, laringe
+        y paladar.<br><br><br>"
       objectReference: {fileID: 0}
     - target: {fileID: 7264986227520560567, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_Name
@@ -24981,7 +25141,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9162815392540484975, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.9962588
       objectReference: {fileID: 0}
     - target: {fileID: 9162815392540484975, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_LocalRotation.x
@@ -24993,15 +25153,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9162815392540484975, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0.086420454
       objectReference: {fileID: 0}
     - target: {fileID: 9162815392540484975, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -7.9620466
+      value: -3.1
       objectReference: {fileID: 0}
     - target: {fileID: 9162815392540484975, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -24.9
+      value: -20.2
       objectReference: {fileID: 0}
     - target: {fileID: 9162815392540484975, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -25013,7 +25173,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9162815392540484975, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 9.915
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
