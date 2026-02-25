@@ -1,6 +1,2 @@
-ID de zonas:
-Quiz 1:
--0,1: Corte puente.
--2,3: Recorte 3.
-Quiz 2:
--4,5: Recorte 8.
+Entorno Interactivo de Aprendizaje de Neuroanatomía (EIAN)
+Proyecto en progreso desarrollado en el motor gráfico Unity orientado al aprendizaje de diversos temas de Neuroanatomía usando herramientas TIC. Este proyecto se encuentra en desarrollo bajo el  liderazgo del profesor Edgar Adrián Torres Sepúlveda, junto con sus tutores, desarrollado por el estudiante de ingeniería de sistemas Alejandro Velandia Gelvez 
