@@ -6,9 +6,9 @@ public class ToggleZonasInteractivas : MonoBehaviour
 {
     [Header("Referencias")]
     public Toggle toggle;
-    public GameObject zonasInteractivas;
+    public GameObject[] zonasInteractivas;
 
-    // Guarda alpha original de cada gráfico (Image o UIPolygon)
+    // Guarda alpha original de cada gráfico (Image, Text, etc.)
     private Dictionary<Graphic, float> alphaOriginal = new Dictionary<Graphic, float>();
 
     // Bandera global accesible desde otros scripts
@@ -18,18 +18,21 @@ public class ToggleZonasInteractivas : MonoBehaviour
     {
         if (zonasInteractivas != null)
         {
-            foreach (Transform child in zonasInteractivas.transform)
+            foreach (GameObject zona in zonasInteractivas)
             {
-                // Buscamos cualquier componente que herede de Graphic
-                Graphic graphic = child.GetComponent<Graphic>();
-                if (graphic != null && !alphaOriginal.ContainsKey(graphic))
+                if (zona == null) continue;
+
+                foreach (Graphic graphic in zona.GetComponentsInChildren<Graphic>())
                 {
-                    alphaOriginal[graphic] = graphic.color.a;
+                    if (!alphaOriginal.ContainsKey(graphic))
+                    {
+                        alphaOriginal[graphic] = graphic.color.a;
+                    }
                 }
             }
         }
 
-        if (toggle != null && zonasInteractivas != null)
+        if (toggle != null)
         {
             toggle.onValueChanged.AddListener(ToggleZonas);
             toggle.isOn = true;
@@ -38,14 +41,17 @@ public class ToggleZonasInteractivas : MonoBehaviour
 
     void ToggleZonas(bool estado)
     {
-        zonasActivas = estado; // 🔑 actualiza la bandera global
+        zonasActivas = estado;
 
-        if (zonasInteractivas != null)
+        if (zonasInteractivas == null) return;
+
+        foreach (GameObject zona in zonasInteractivas)
         {
-            foreach (Transform child in zonasInteractivas.transform)
+            if (zona == null) continue;
+
+            foreach (Graphic graphic in zona.GetComponentsInChildren<Graphic>())
             {
-                Graphic graphic = child.GetComponent<Graphic>();
-                if (graphic != null && alphaOriginal.ContainsKey(graphic))
+                if (alphaOriginal.ContainsKey(graphic))
                 {
                     Color color = graphic.color;
                     color.a = estado ? alphaOriginal[graphic] : 0f;
