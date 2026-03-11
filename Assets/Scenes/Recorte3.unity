@@ -4248,7 +4248,17 @@ PrefabInstance:
       objectReference: {fileID: 140399504}
     - target: {fileID: 5597142459016686881, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: infoTexto
-      value: Incompleto.
+      value: "<b><size=120%>N\xDACLEO CUNEATUS</size></b><br><br> <b>Generalidades:</b>
+        N\xFAcleo ubicado lateral al n\xFAcleo gr\xE1cil en el bulbo raqu\xEDdeo.
+        Aqu\xED terminan las fibras del fasc\xEDculo cuneatus, encargado de transmitir
+        sensibilidad fina, vibraci\xF3n y propiocepci\xF3n consciente procedente
+        de los segmentos C2\u2013T6. Las neuronas que llegan a este n\xFAcleo tienen
+        su soma en ganglios espinales como neuronas pseudounipolares.<br><br> <b>Principales
+        aferencias:</b> Fasc\xEDculo cuneatus procedente de neuronas sensitivas pseudounipolares
+        de los ganglios espinales (informaci\xF3n somatosensorial de miembros superiores
+        y tronco superior).<br><br> <b>Principales eferencias:</b> Fibras arcuatas
+        internas que cruzan al lado opuesto y ascienden como lemnisco medial hacia
+        el n\xFAcleo ventral posterolateral (VPL) del t\xE1lamo.<br><br><br>"
       objectReference: {fileID: 0}
     - target: {fileID: 7264986227520560567, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_Name
@@ -8451,7 +8461,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 727099222}
   m_Direction: 0
   m_Value: 0
-  m_Size: 0.9999998
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -12670,7 +12680,17 @@ PrefabInstance:
       objectReference: {fileID: 140399504}
     - target: {fileID: 5597142459016686881, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: infoTexto
-      value: Incompleto
+      value: "<b><size=120%>N\xDACLEO ESPINAL DEL TRIG\xC9MINO</size></b><br><br>
+        <b>Generalidades:</b> N\xFAcleo sensitivo del nervio trig\xE9mino (V) encargado
+        de procesar informaci\xF3n exteroceptiva de la cara, especialmente dolor,
+        temperatura y tacto grosero. Se extiende a lo largo de la m\xE9dula oblonga
+        hasta aproximadamente el nivel de C3. Su porci\xF3n caudal se contin\xFAa
+        con la sustancia gelatinosa (l\xE1mina II de Rexed) y su porci\xF3n rostral
+        con el n\xFAcleo sensitivo principal del trig\xE9mino.<br><br> <b>Principales
+        aferencias:</b> Fibras sensitivas de los nervios trig\xE9mino (V), facial
+        (VII), glosofar\xEDngeo (IX) y vago (X).<br><br> <b>Principales eferencias:</b>
+        Proyecciones que ascienden por el lemnisco trigeminal hacia el n\xFAcleo
+        ventral posterolateral (VPL) del t\xE1lamo.<br><br><br>"
       objectReference: {fileID: 0}
     - target: {fileID: 7264986227520560567, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_Name
@@ -21191,7 +21211,17 @@ PrefabInstance:
       objectReference: {fileID: 140399504}
     - target: {fileID: 5597142459016686881, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: infoTexto
-      value: Incompleto
+      value: "<b><size=120%>N\xDACLEO ESPINAL DEL TRIG\xC9MINO</size></b><br><br>
+        <b>Generalidades:</b> N\xFAcleo sensitivo del nervio trig\xE9mino (V) encargado
+        de procesar informaci\xF3n exteroceptiva de la cara, especialmente dolor,
+        temperatura y tacto grosero. Se extiende a lo largo de la m\xE9dula oblonga
+        hasta aproximadamente el nivel de C3. Su porci\xF3n caudal se contin\xFAa
+        con la sustancia gelatinosa (l\xE1mina II de Rexed) y su porci\xF3n rostral
+        con el n\xFAcleo sensitivo principal del trig\xE9mino.<br><br> <b>Principales
+        aferencias:</b> Fibras sensitivas de los nervios trig\xE9mino (V), facial
+        (VII), glosofar\xEDngeo (IX) y vago (X).<br><br> <b>Principales eferencias:</b>
+        Proyecciones que ascienden por el lemnisco trigeminal hacia el n\xFAcleo
+        ventral posterolateral (VPL) del t\xE1lamo.<br><br><br>"
       objectReference: {fileID: 0}
     - target: {fileID: 7264986227520560567, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_Name
@@ -23279,7 +23309,17 @@ PrefabInstance:
       objectReference: {fileID: 140399504}
     - target: {fileID: 5597142459016686881, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: infoTexto
-      value: Incompleto
+      value: "<b><size=120%>N\xDACLEO CUNEATUS</size></b><br><br> <b>Generalidades:</b>
+        N\xFAcleo ubicado lateral al n\xFAcleo gr\xE1cil en el bulbo raqu\xEDdeo.
+        Aqu\xED terminan las fibras del fasc\xEDculo cuneatus, encargado de transmitir
+        sensibilidad fina, vibraci\xF3n y propiocepci\xF3n consciente procedente
+        de los segmentos C2\u2013T6. Las neuronas que llegan a este n\xFAcleo tienen
+        su soma en ganglios espinales como neuronas pseudounipolares.<br><br> <b>Principales
+        aferencias:</b> Fasc\xEDculo cuneatus procedente de neuronas sensitivas pseudounipolares
+        de los ganglios espinales (informaci\xF3n somatosensorial de miembros superiores
+        y tronco superior).<br><br> <b>Principales eferencias:</b> Fibras arcuatas
+        internas que cruzan al lado opuesto y ascienden como lemnisco medial hacia
+        el n\xFAcleo ventral posterolateral (VPL) del t\xE1lamo.<br><br><br>"
       objectReference: {fileID: 0}
     - target: {fileID: 7264986227520560567, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: m_Name
