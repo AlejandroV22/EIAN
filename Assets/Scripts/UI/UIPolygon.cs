@@ -20,6 +20,7 @@ public class UIPolygon : Graphic
     };
     
     public List<Vector2> Points => points;
+    
 
     protected override void OnPopulateMesh(VertexHelper vh)
     {
@@ -85,21 +86,24 @@ public class UIPolygon : Graphic
         float height = maxY - minY;
 
         RectTransform rt = GetComponent<RectTransform>();
-        if (rt != null)
+        if (rt == null) return;
+
+    #if UNITY_EDITOR
+        Undo.RecordObject(rt, "Resize RectTransform to Polygon");
+    #endif
+
+        Vector2 offset = new Vector2(minX + width * 0.5f, minY + height * 0.5f);
+
+        rt.sizeDelta = new Vector2(width, height);
+        rt.anchoredPosition += offset;
+
+        // Recentrar los puntos para que el polígono no cambie de lugar
+        for (int i = 0; i < points.Count; i++)
         {
-            Undo.RecordObject(rt, "Resize RectTransform to Polygon");
-
-            rt.sizeDelta = new Vector2(width, height);
-
-            // Ajustar pivote para mantener la figura centrada
-            Vector2 pivotOffset = new Vector2(
-                -(minX + width / 2f) / width,
-                -(minY + height / 2f) / height
-            );
-
-            rt.pivot = new Vector2(0.5f, 0.5f);
-            rt.anchoredPosition += new Vector2(minX + width / 2f, minY + height / 2f);
+            points[i] -= offset;
         }
+
+        SetVerticesDirty();
     }
 
 }
