@@ -4230,7 +4230,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3832676071948936252, guid: b695782af0fcf0e40ac8d6228e207b3a, type: 3}
       propertyPath: segments
-      value: 25
+      value: 600
       objectReference: {fileID: 0}
     - target: {fileID: 3832676071948936252, guid: b695782af0fcf0e40ac8d6228e207b3a, type: 3}
       propertyPath: m_Color.b
@@ -4250,27 +4250,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3832676071948936252, guid: b695782af0fcf0e40ac8d6228e207b3a, type: 3}
       propertyPath: endPoint.x
-      value: 81.8
+      value: 74.7
       objectReference: {fileID: 0}
     - target: {fileID: 3832676071948936252, guid: b695782af0fcf0e40ac8d6228e207b3a, type: 3}
       propertyPath: endPoint.y
-      value: 30.5
+      value: 85.4
       objectReference: {fileID: 0}
     - target: {fileID: 3832676071948936252, guid: b695782af0fcf0e40ac8d6228e207b3a, type: 3}
       propertyPath: startPoint.x
-      value: 3
+      value: -14.9
       objectReference: {fileID: 0}
     - target: {fileID: 3832676071948936252, guid: b695782af0fcf0e40ac8d6228e207b3a, type: 3}
       propertyPath: startPoint.y
-      value: -85.09
+      value: -85.2
       objectReference: {fileID: 0}
     - target: {fileID: 3832676071948936252, guid: b695782af0fcf0e40ac8d6228e207b3a, type: 3}
       propertyPath: controlPoint.x
-      value: -190.9
+      value: -168.6
       objectReference: {fileID: 0}
     - target: {fileID: 3832676071948936252, guid: b695782af0fcf0e40ac8d6228e207b3a, type: 3}
       propertyPath: controlPoint.y
-      value: 354.5
+      value: 236.79
       objectReference: {fileID: 0}
     - target: {fileID: 5597142459016686881, guid: b695782af0fcf0e40ac8d6228e207b3a, type: 3}
       propertyPath: panel
@@ -12223,7 +12223,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1345626494}
   m_HandleRect: {fileID: 1345626493}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
