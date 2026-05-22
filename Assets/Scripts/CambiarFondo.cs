@@ -10,6 +10,10 @@ public class CambiarFondo : MonoBehaviour
 
     void Start()
     {
+        // Poner alpha en 255 
+        Color color = backgroundImage.color;
+        color.a = 1f;
+        backgroundImage.color = color;
         // Restaurar última selección
         int savedIndex = PlayerPrefs.GetInt("BackgroundIndex", 0);
         backgroundDropdown.value = savedIndex;

@@ -15,7 +15,7 @@ public class UICurveLine : Graphic
 
     private List<Vector2> curvePoints = new List<Vector2>();
 
-    public float raycastPadding = 6f;
+    public new float raycastPadding = 6f;
 
 
     public override bool Raycast(Vector2 sp, Camera eventCamera)

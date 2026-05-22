@@ -30,14 +30,29 @@ EditorBuildSettings:
     path: Assets/Scenes/Quiz2.unity
     guid: 132b691308d9e8c43a85b98ad41ee479
   - enabled: 1
+    path: Assets/Scenes/AnatInterna.unity
+    guid: b548427b00181c54c9ce10b1c6f59353
+  - enabled: 1
+    path: Assets/Scenes/Brodmann.unity
+    guid: 4f0551dd4fd6c28448a630559bad3f4b
+  - enabled: 1
     path: Assets/Scenes/Quiz3.unity
     guid: b34f08c7c4378164797c42f6e71404e2
   - enabled: 1
     path: Assets/Scenes/CortePuente.unity
     guid: dca2c411db1b39245b7cb9b607567af5
   - enabled: 1
+    path: Assets/Scenes/AnatCerebral.unity
+    guid: 2cc199b7d0716e642aea3358dad83704
+  - enabled: 1
+    path: Assets/Scenes/Coronal.unity
+    guid: 99f686d70bdfc7d44b39ed40bb1943d6
+  - enabled: 1
     path: Assets/Scenes/MenuMinijuegos.unity
     guid: e4003915a7fd41b4e8c678be6ab76976
+  - enabled: 1
+    path: Assets/Scenes/Transversal.unity
+    guid: 62a46534469473e43ae50df826dd7ae7
   - enabled: 1
     path: Assets/Scenes/MinijuegoColumnas.unity
     guid: 3063f67e978374c49aad0d4485ac2c71
@@ -50,6 +65,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MenuPrincipal.unity
     guid: 988d1b3fe9358c840a49f3d5cbf70605
+  - enabled: 1
+    path: Assets/Scenes/Irrigacion.unity
+    guid: 0eb17d43c018a3946b723d28b11bcf17
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

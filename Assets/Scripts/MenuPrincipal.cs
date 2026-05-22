@@ -4,11 +4,13 @@ using UnityEngine.SceneManagement;
 
 public class MenuPrincipal : MonoBehaviour
 {
-
-
-    public void Empezar()
+    public void TalloCerebral()
     {
         SceneManager.LoadScene("VistaPrincipal");
+    }
+    public void AnatCerebral()
+    {
+        SceneManager.LoadScene("AnatCerebral");
     }
 
     public void irQuiz()
