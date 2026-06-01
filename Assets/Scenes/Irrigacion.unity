@@ -4572,9 +4572,9 @@ MonoBehaviour:
   m_StartCorner: 0
   m_StartAxis: 0
   m_CellSize: {x: 200, y: 200}
-  m_Spacing: {x: 24, y: 10}
-  m_Constraint: 1
-  m_ConstraintCount: 6
+  m_Spacing: {x: 47, y: 10}
+  m_Constraint: 0
+  m_ConstraintCount: 5
 --- !u!1001 &660401258
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5821,7 +5821,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 111744180}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.61897194
+  m_Size: 0.5524225
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
