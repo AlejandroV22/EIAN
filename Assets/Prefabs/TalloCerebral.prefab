@@ -88,9 +88,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e8855dc8bd550740b9f459bd8039e30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverColor: {r: 1, g: 1, b: 1, a: 0.3}
   infoTexto: hola soy dos
   panel: {fileID: 0}
+  zonaID: 
+  temaID: 
 --- !u!1 &2411078163382162332
 GameObject:
   m_ObjectHideFlags: 0
@@ -179,9 +180,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e8855dc8bd550740b9f459bd8039e30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverColor: {r: 1, g: 1, b: 1, a: 0.3}
   infoTexto: yurmom
   panel: {fileID: 0}
+  zonaID: 
+  temaID: 
 --- !u!1 &4327008151979696294
 GameObject:
   m_ObjectHideFlags: 0
@@ -273,6 +275,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imageTransform: {fileID: 8011901668767223618}
+  canvas: {fileID: 0}
   zoomSpeed: 4
   minScale: 4.4
   maxScale: 20
@@ -288,7 +291,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4053bc1123036e943bf12d7d6de82d50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultScale: {x: 4.4, y: 4.4, z: 1}
+  defaultScale: {x: 1, y: 1, z: 1}
+  isDraggable: 1
   animationDuration: 0.4
 --- !u!1 &4756542323875168302
 GameObject:
@@ -378,9 +382,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e8855dc8bd550740b9f459bd8039e30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverColor: {r: 1, g: 1, b: 1, a: 0.3}
   infoTexto: sapo
   panel: {fileID: 0}
+  zonaID: 
+  temaID: 
 --- !u!1 &5038012452921335768
 GameObject:
   m_ObjectHideFlags: 0
@@ -469,6 +474,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e8855dc8bd550740b9f459bd8039e30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverColor: {r: 0, g: 0.7370956, b: 1, a: 1}
   infoTexto: Informacion
   panel: {fileID: 0}
+  zonaID: 
+  temaID: 

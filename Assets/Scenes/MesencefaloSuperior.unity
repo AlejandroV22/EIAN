@@ -3293,7 +3293,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 496323897}
   m_HandleRect: {fileID: 496323896}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -3517,6 +3517,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4436537112673471834, guid: 5eccde1fda8387945a6645146f805dc7, type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 1835364577}
     - target: {fileID: 4436537112673471834, guid: 5eccde1fda8387945a6645146f805dc7, type: 3}
       propertyPath: maxScale
       value: 100

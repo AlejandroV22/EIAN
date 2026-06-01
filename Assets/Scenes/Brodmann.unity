@@ -318,6 +318,10 @@ PrefabInstance:
       value: Cerebro
       objectReference: {fileID: 0}
     - target: {fileID: 4436537112673471834, guid: 5eccde1fda8387945a6645146f805dc7, type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 130184515}
+    - target: {fileID: 4436537112673471834, guid: 5eccde1fda8387945a6645146f805dc7, type: 3}
       propertyPath: maxScale
       value: 100
       objectReference: {fileID: 0}

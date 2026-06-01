@@ -321,6 +321,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4436537112673471834, guid: 5eccde1fda8387945a6645146f805dc7, type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 130184515}
+    - target: {fileID: 4436537112673471834, guid: 5eccde1fda8387945a6645146f805dc7, type: 3}
       propertyPath: maxScale
       value: 100
       objectReference: {fileID: 0}
@@ -12223,7 +12227,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1345626494}
   m_HandleRect: {fileID: 1345626493}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:

@@ -9,6 +9,7 @@ public class DragImage : MonoBehaviour, IPointerDownHandler, IDragHandler
 
     [Header("Opciones de centrado")]
     public Vector3 defaultScale = Vector3.one;
+    public bool isDraggable = true;
     public float animationDuration = 0.4f;
 
     void Start()
@@ -18,19 +19,25 @@ public class DragImage : MonoBehaviour, IPointerDownHandler, IDragHandler
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        lastMousePosition = eventData.position;
+        if (isDraggable)
+        {
+            lastMousePosition = eventData.position;
+        }
     }
 
     public void OnDrag(PointerEventData eventData)
     {
-        Vector2 delta = eventData.position - lastMousePosition;
-        rectTransform.anchoredPosition += delta;
-        lastMousePosition = eventData.position;
+        if (isDraggable)
+        {
+            Vector2 delta = eventData.position - lastMousePosition;
+            rectTransform.anchoredPosition += delta;
+            lastMousePosition = eventData.position;
+        }
     }
 
     public void CenterImage()
     {
-        StopAllCoroutines(); // Para evitar que se acumulen animaciones
+        StopAllCoroutines(); 
         StartCoroutine(AnimateToCenter(Vector2.zero, defaultScale));
     }
 
@@ -43,7 +50,7 @@ public class DragImage : MonoBehaviour, IPointerDownHandler, IDragHandler
         while (t < 1f)
         {
             t += Time.deltaTime / animationDuration;
-            float smoothT = Mathf.SmoothStep(0f, 1f, t); // Suaviza el movimiento
+            float smoothT = Mathf.SmoothStep(0f, 1f, t); 
 
             rectTransform.anchoredPosition = Vector2.Lerp(startPos, targetPos, smoothT);
             rectTransform.localScale = Vector3.Lerp(startScale, targetScale, smoothT);
