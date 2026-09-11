@@ -67,10 +67,11 @@ public class UIPolygon : Graphic
     }
     #endif
     
-    public void UpdateRectTransformToFit()
+        public void UpdateRectTransformToFit()
     {
         if (points == null || points.Count == 0) return;
 
+        // 1. Encontrar los límites en el espacio local actual
         float minX = float.MaxValue, maxX = float.MinValue;
         float minY = float.MaxValue, maxY = float.MinValue;
 
@@ -85,25 +86,34 @@ public class UIPolygon : Graphic
         float width = maxX - minX;
         float height = maxY - minY;
 
-        RectTransform rt = GetComponent<RectTransform>();
-        if (rt == null) return;
+        // Si el bounding box es casi nulo, evitar divisiones por cero
+        if (width <= 0.001f || height <= 0.001f) return;
+
+        RectTransform rt = rectTransform; // Graphic ya tiene la propiedad rectTransform optimizada
 
     #if UNITY_EDITOR
-        Undo.RecordObject(rt, "Resize RectTransform to Polygon");
+        Undo.RecordObjects(new Object[] { rt, this }, "Fit Polygon to RectTransform");
     #endif
 
-        Vector2 offset = new Vector2(minX + width * 0.5f, minY + height * 0.5f);
+        // 2. Determinar la posición central actual de la forma respecto al RectTransform
+        Vector2 centerOffset = new Vector2(minX + width * 0.5f, minY + height * 0.5f);
 
+        // 3. Mover el RectTransform a esa nueva posición central
+        rt.anchoredPosition += centerOffset;
         rt.sizeDelta = new Vector2(width, height);
-        rt.anchoredPosition += offset;
 
-        // Recentrar los puntos para que el polígono no cambie de lugar
+        // 4. Re-centrar los vértices en (0,0) local
         for (int i = 0; i < points.Count; i++)
         {
-            points[i] -= offset;
+            points[i] -= centerOffset;
         }
 
         SetVerticesDirty();
+
+    #if UNITY_EDITOR
+        EditorUtility.SetDirty(this);
+        EditorUtility.SetDirty(rt);
+    #endif
     }
 
 }
