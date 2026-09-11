@@ -580,7 +580,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 79185836}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e8855dc8bd550740b9f459bd8039e30, type: 3}
   m_Name: 
@@ -601,8 +601,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6affde8add799b4caf990b4402c9db0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreEscena: Recorte3
-  panelAdvertencia: {fileID: 0}
+  nombreEscena: Recorte8
+  panelAdvertencia: {fileID: 1710212153}
   zonaID: 1
   nombreTema: 
 --- !u!1 &130184512
@@ -958,7 +958,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 269612905}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e8855dc8bd550740b9f459bd8039e30, type: 3}
   m_Name: 
@@ -979,8 +979,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6affde8add799b4caf990b4402c9db0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreEscena: Recorte3
-  panelAdvertencia: {fileID: 0}
+  nombreEscena: Recorte4
+  panelAdvertencia: {fileID: 1710212153}
   zonaID: 1
   nombreTema: 
 --- !u!1 &278489374
@@ -1272,7 +1272,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 300166371}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e8855dc8bd550740b9f459bd8039e30, type: 3}
   m_Name: 
@@ -1293,8 +1293,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6affde8add799b4caf990b4402c9db0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreEscena: Recorte3
-  panelAdvertencia: {fileID: 0}
+  nombreEscena: Recorte10
+  panelAdvertencia: {fileID: 1710212153}
   zonaID: 1
   nombreTema: 
 --- !u!1 &308126068
@@ -1684,7 +1684,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 411042359}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e8855dc8bd550740b9f459bd8039e30, type: 3}
   m_Name: 
@@ -1705,8 +1705,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6affde8add799b4caf990b4402c9db0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreEscena: Recorte3
-  panelAdvertencia: {fileID: 0}
+  nombreEscena: Recorte10
+  panelAdvertencia: {fileID: 1710212153}
   zonaID: 1
   nombreTema: 
 --- !u!1001 &430747870
@@ -1919,7 +1919,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 430747872}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e8855dc8bd550740b9f459bd8039e30, type: 3}
   m_Name: 
@@ -1940,8 +1940,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6affde8add799b4caf990b4402c9db0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreEscena: Recorte3
-  panelAdvertencia: {fileID: 0}
+  nombreEscena: Recorte8
+  panelAdvertencia: {fileID: 1710212153}
   zonaID: 1
   nombreTema: 
 --- !u!1001 &435908996
@@ -2405,7 +2405,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 454284318}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e8855dc8bd550740b9f459bd8039e30, type: 3}
   m_Name: 
@@ -2426,8 +2426,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6affde8add799b4caf990b4402c9db0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreEscena: Recorte3
-  panelAdvertencia: {fileID: 0}
+  nombreEscena: Recorte6
+  panelAdvertencia: {fileID: 1710212153}
   zonaID: 1
   nombreTema: 
 --- !u!114 &461429070 stripped
@@ -2687,7 +2687,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 514487516}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e8855dc8bd550740b9f459bd8039e30, type: 3}
   m_Name: 
@@ -2708,8 +2708,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6affde8add799b4caf990b4402c9db0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreEscena: Recorte3
-  panelAdvertencia: {fileID: 0}
+  nombreEscena: Recorte9
+  panelAdvertencia: {fileID: 1710212153}
   zonaID: 1
   nombreTema: 
 --- !u!1 &519420028
@@ -3213,7 +3213,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 731932335}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e8855dc8bd550740b9f459bd8039e30, type: 3}
   m_Name: 
@@ -3234,8 +3234,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6affde8add799b4caf990b4402c9db0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreEscena: Recorte3
-  panelAdvertencia: {fileID: 0}
+  nombreEscena: Recorte7
+  panelAdvertencia: {fileID: 1710212153}
   zonaID: 1
   nombreTema: 
 --- !u!1 &844937772
@@ -3523,7 +3523,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 847492760}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e8855dc8bd550740b9f459bd8039e30, type: 3}
   m_Name: 
@@ -3544,8 +3544,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6affde8add799b4caf990b4402c9db0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreEscena: Recorte3
-  panelAdvertencia: {fileID: 0}
+  nombreEscena: Recorte11
+  panelAdvertencia: {fileID: 1710212153}
   zonaID: 1
   nombreTema: 
 --- !u!1001 &885951235
@@ -3664,6 +3664,18 @@ PrefabInstance:
       propertyPath: zonasInteractivas
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4269422233344072709, guid: e93e179c2e0353540b5fbac797780c18, type: 3}
+      propertyPath: zonasInteractivas.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4269422233344072709, guid: e93e179c2e0353540b5fbac797780c18, type: 3}
+      propertyPath: 'zonasInteractivas.Array.data[0]'
+      value: 
+      objectReference: {fileID: 251443194}
+    - target: {fileID: 4269422233344072709, guid: e93e179c2e0353540b5fbac797780c18, type: 3}
+      propertyPath: 'zonasInteractivas.Array.data[1]'
+      value: 
+      objectReference: {fileID: 1911545900}
     - target: {fileID: 7812796668278676027, guid: e93e179c2e0353540b5fbac797780c18, type: 3}
       propertyPath: m_Name
       value: PanelOpciones
@@ -3915,7 +3927,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 893574289}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e8855dc8bd550740b9f459bd8039e30, type: 3}
   m_Name: 
@@ -3936,8 +3948,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6affde8add799b4caf990b4402c9db0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreEscena: Recorte3
-  panelAdvertencia: {fileID: 0}
+  nombreEscena: Recorte4
+  panelAdvertencia: {fileID: 1710212153}
   zonaID: 1
   nombreTema: 
 --- !u!1 &905921828
@@ -4286,7 +4298,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 942436040}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e8855dc8bd550740b9f459bd8039e30, type: 3}
   m_Name: 
@@ -4308,7 +4320,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nombreEscena: Recorte3
-  panelAdvertencia: {fileID: 0}
+  panelAdvertencia: {fileID: 1710212153}
   zonaID: 1
   nombreTema: 
 --- !u!1001 &949556708
@@ -4521,7 +4533,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 949556710}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e8855dc8bd550740b9f459bd8039e30, type: 3}
   m_Name: 
@@ -4542,8 +4554,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6affde8add799b4caf990b4402c9db0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreEscena: Recorte3
-  panelAdvertencia: {fileID: 0}
+  nombreEscena: Recorte5
+  panelAdvertencia: {fileID: 1710212153}
   zonaID: 1
   nombreTema: 
 --- !u!1 &965546780
@@ -4906,7 +4918,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 970373330}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e8855dc8bd550740b9f459bd8039e30, type: 3}
   m_Name: 
@@ -4927,8 +4939,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6affde8add799b4caf990b4402c9db0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreEscena: Recorte3
-  panelAdvertencia: {fileID: 0}
+  nombreEscena: Recorte11
+  panelAdvertencia: {fileID: 1710212153}
   zonaID: 1
   nombreTema: 
 --- !u!1001 &992085976
@@ -5141,7 +5153,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 992085978}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e8855dc8bd550740b9f459bd8039e30, type: 3}
   m_Name: 
@@ -5162,8 +5174,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6affde8add799b4caf990b4402c9db0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreEscena: Recorte3
-  panelAdvertencia: {fileID: 0}
+  nombreEscena: Recorte2
+  panelAdvertencia: {fileID: 1710212153}
   zonaID: 1
   nombreTema: 
 --- !u!1001 &1033567979
@@ -5376,7 +5388,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1033567981}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e8855dc8bd550740b9f459bd8039e30, type: 3}
   m_Name: 
@@ -5397,8 +5409,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6affde8add799b4caf990b4402c9db0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreEscena: Recorte3
-  panelAdvertencia: {fileID: 0}
+  nombreEscena: Recorte2
+  panelAdvertencia: {fileID: 1710212153}
   zonaID: 1
   nombreTema: 
 --- !u!1001 &1070991061
@@ -5753,7 +5765,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1169196073}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e8855dc8bd550740b9f459bd8039e30, type: 3}
   m_Name: 
@@ -5774,8 +5786,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6affde8add799b4caf990b4402c9db0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreEscena: Recorte3
-  panelAdvertencia: {fileID: 0}
+  nombreEscena: Recorte9
+  panelAdvertencia: {fileID: 1710212153}
   zonaID: 1
   nombreTema: 
 --- !u!1 &1189697175
@@ -6537,7 +6549,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1439361671}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e8855dc8bd550740b9f459bd8039e30, type: 3}
   m_Name: 
@@ -6559,7 +6571,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nombreEscena: Recorte3
-  panelAdvertencia: {fileID: 0}
+  panelAdvertencia: {fileID: 1710212153}
   zonaID: 1
   nombreTema: 
 --- !u!1001 &1456631552
@@ -6772,7 +6784,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1456631554}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e8855dc8bd550740b9f459bd8039e30, type: 3}
   m_Name: 
@@ -6793,8 +6805,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6affde8add799b4caf990b4402c9db0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreEscena: Recorte3
-  panelAdvertencia: {fileID: 0}
+  nombreEscena: Recorte5
+  panelAdvertencia: {fileID: 1710212153}
   zonaID: 1
   nombreTema: 
 --- !u!224 &1710212150 stripped
@@ -7069,7 +7081,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1873369143}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e8855dc8bd550740b9f459bd8039e30, type: 3}
   m_Name: 
@@ -7090,8 +7102,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6affde8add799b4caf990b4402c9db0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreEscena: Recorte3
-  panelAdvertencia: {fileID: 0}
+  nombreEscena: Recorte7
+  panelAdvertencia: {fileID: 1710212153}
   zonaID: 1
   nombreTema: 
 --- !u!1 &1911545900
@@ -7340,7 +7352,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2029333561}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e8855dc8bd550740b9f459bd8039e30, type: 3}
   m_Name: 
@@ -7361,8 +7373,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6affde8add799b4caf990b4402c9db0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreEscena: Recorte3
-  panelAdvertencia: {fileID: 0}
+  nombreEscena: Recorte1
+  panelAdvertencia: {fileID: 1710212153}
   zonaID: 1
   nombreTema: 
 --- !u!1001 &2066453386
@@ -7575,7 +7587,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2066453388}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e8855dc8bd550740b9f459bd8039e30, type: 3}
   m_Name: 
@@ -7596,8 +7608,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6affde8add799b4caf990b4402c9db0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreEscena: Recorte3
-  panelAdvertencia: {fileID: 0}
+  nombreEscena: Recorte6
+  panelAdvertencia: {fileID: 1710212153}
   zonaID: 1
   nombreTema: 
 --- !u!1001 &1047280731045076107
@@ -7912,7 +7924,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6affde8add799b4caf990b4402c9db0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreEscena: Recorte3
+  nombreEscena: Recorte1
   panelAdvertencia: {fileID: 1710212153}
   zonaID: 1
   nombreTema: 
