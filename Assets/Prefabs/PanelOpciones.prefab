@@ -750,7 +750,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_IsOn: 1
+  m_IsOn: 0
 --- !u!1 &7521771186572463479
 GameObject:
   m_ObjectHideFlags: 0
@@ -980,7 +980,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toggle: {fileID: 8971267280679913039}
-  zonasInteractivas: {fileID: 0}
+  zonasInteractivas:
+  - {fileID: 0}
 --- !u!114 &1461862279047774653
 MonoBehaviour:
   m_ObjectHideFlags: 0

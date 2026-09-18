@@ -1058,11 +1058,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8011901668767223618, guid: 5eccde1fda8387945a6645146f805dc7, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1008
+      value: 812
       objectReference: {fileID: 0}
     - target: {fileID: 8011901668767223618, guid: 5eccde1fda8387945a6645146f805dc7, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 756
+      value: 684
       objectReference: {fileID: 0}
     - target: {fileID: 8011901668767223618, guid: 5eccde1fda8387945a6645146f805dc7, type: 3}
       propertyPath: m_LocalScale.x
@@ -4112,7 +4112,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 727099222}
   m_Direction: 0
   m_Value: 0
-  m_Size: 0.9999998
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

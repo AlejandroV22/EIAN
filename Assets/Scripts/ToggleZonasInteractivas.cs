@@ -6,13 +6,14 @@ public class ToggleZonasInteractivas : MonoBehaviour
 {
     [Header("Referencias")]
     public Toggle toggle;
+    
     public GameObject[] zonasInteractivas;
 
     // Guarda alpha original de cada gráfico (Image, Text, etc.)
     private Dictionary<Graphic, float> alphaOriginal = new Dictionary<Graphic, float>();
 
     // Bandera global accesible desde otros scripts
-    public static bool zonasActivas = true;
+    public static bool zonasActivas = false;
 
     void Start()
     {
