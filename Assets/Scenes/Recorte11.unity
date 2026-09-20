@@ -385,7 +385,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4327008151979696294, guid: 5eccde1fda8387945a6645146f805dc7, type: 3}
       propertyPath: m_Name
-      value: Corte11
+      value: Vista superior
       objectReference: {fileID: 0}
     - target: {fileID: 4327008151979696294, guid: 5eccde1fda8387945a6645146f805dc7, type: 3}
       propertyPath: m_IsActive
@@ -2176,7 +2176,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Corte11
+  m_Text: VIsta superior
 --- !u!222 &1100945991
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2203,7 +2203,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4327008151979696294, guid: 5eccde1fda8387945a6645146f805dc7, type: 3}
       propertyPath: m_Name
-      value: Corte12
+      value: Vista inferior
       objectReference: {fileID: 0}
     - target: {fileID: 4327008151979696294, guid: 5eccde1fda8387945a6645146f805dc7, type: 3}
       propertyPath: m_IsActive
@@ -3768,9 +3768,9 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: Corte11
+    - m_Text: VIsta superior
       m_Image: {fileID: 0}
-    - m_Text: Corte12
+    - m_Text: Vista inferior
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
