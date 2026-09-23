@@ -9,14 +9,22 @@ public class ToggleZonasInteractivas : MonoBehaviour
     
     public GameObject[] zonasInteractivas;
 
-    // Guarda alpha original de cada gráfico (Image, Text, etc.)
+    
     private Dictionary<Graphic, float> alphaOriginal = new Dictionary<Graphic, float>();
 
-    // Bandera global accesible desde otros scripts
+    
     public static bool zonasActivas = false;
 
     void Start()
     {
+        if (toggle == null)
+        {
+            Debug.LogError("[ToggleZonasInteractivas] Falta asignar el Toggle.");
+            return;
+        }
+
+        toggle.isOn = false;
+
         if (zonasInteractivas != null)
         {
             foreach (GameObject zona in zonasInteractivas)
@@ -26,18 +34,13 @@ public class ToggleZonasInteractivas : MonoBehaviour
                 foreach (Graphic graphic in zona.GetComponentsInChildren<Graphic>())
                 {
                     if (!alphaOriginal.ContainsKey(graphic))
-                    {
                         alphaOriginal[graphic] = graphic.color.a;
-                    }
                 }
             }
         }
 
-        if (toggle != null)
-        {
-            toggle.onValueChanged.AddListener(ToggleZonas);
-            toggle.isOn = true;
-        }
+        ToggleZonas(toggle.isOn);
+        toggle.onValueChanged.AddListener(ToggleZonas);
     }
 
     void ToggleZonas(bool estado)

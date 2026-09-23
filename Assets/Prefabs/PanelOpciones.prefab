@@ -998,4 +998,4 @@ MonoBehaviour:
   botonCerrar: {fileID: 4610028585576531157}
   botonAbrir: {fileID: 7621113523185265908}
   duracion: 0.3
-  desplazamientoX: -260
+  desplazamientoX: -295

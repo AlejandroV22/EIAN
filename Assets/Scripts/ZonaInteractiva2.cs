@@ -1,4 +1,4 @@
-    using UnityEngine;
+using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
@@ -11,9 +11,12 @@ public class ZonaInteractiva2 : MonoBehaviour, IPointerEnterHandler, IPointerExi
     public string zonaID;
     public string temaID;
 
+    [Header("Hover")]
+    [SerializeField] private float alphaExtra = 0.3f;
+
     private Graphic graphic;
-    private Color originalColor;
-    private float originalAlpha;
+    private Color colorAntesDeHover;
+    private bool enHover;
 
     void Start()
     {
@@ -23,31 +26,46 @@ public class ZonaInteractiva2 : MonoBehaviour, IPointerEnterHandler, IPointerExi
         {
             Debug.LogError($"[ZonaInteractiva2] No se encontró un componente Graphic en {gameObject.name}");
             enabled = false;
-            return;
         }
-
-        originalColor = graphic.color;
-        originalAlpha = graphic.color.a;
     }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
+        if (graphic == null || enHover) return;
+
         if (ToggleZonasInteractivas.zonasActivas && graphic.color.a > 0)
         {
-            Color hoverColor = originalColor;
-            hoverColor.a = Mathf.Clamp01(originalAlpha + 0.3f);
+           
+            colorAntesDeHover = graphic.color;
+            enHover = true;
+
+            Color hoverColor = colorAntesDeHover;
+            hoverColor.a = Mathf.Clamp01(colorAntesDeHover.a + alphaExtra);
             graphic.color = hoverColor;
-            graphic.SetVerticesDirty();
         }
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        if (ToggleZonasInteractivas.zonasActivas && graphic.color.a > 0)
-        {
-            graphic.color = originalColor;
-            graphic.SetVerticesDirty();
-        }
+        RestaurarColor();
+    }
+
+    void OnDisable()
+    {
+        RestaurarColor();
+    }
+
+    private void RestaurarColor()
+    {
+        if (!enHover || graphic == null) return;
+
+        Color color = colorAntesDeHover;
+
+        if (!ToggleZonasInteractivas.zonasActivas)
+            color.a = 0f;
+
+        graphic.color = color;
+        enHover = false;
     }
 
     public void OnPointerClick(PointerEventData eventData)

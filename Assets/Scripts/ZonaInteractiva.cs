@@ -4,16 +4,19 @@ using UnityEngine.SceneManagement;
 
 public class ZonaInteractiva : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
 {
-    private UIPolygon polygon;
-    private Color originalColor;
-    private float originalAlpha;
-
     public string nombreEscena;
     public PanelAdvertencia panelAdvertencia;
 
     [Header("Tracking")]
     public int zonaID;
     public string nombreTema;
+
+    [Header("Hover")]
+    [SerializeField] private float alphaExtra = 0.3f;
+
+    private UIPolygon polygon;
+    private Color colorAntesDeHover;
+    private bool enHover;
 
     void Start()
     {
@@ -26,66 +29,55 @@ public class ZonaInteractiva : MonoBehaviour, IPointerEnterHandler, IPointerExit
             return;
         }
 
-        originalColor = polygon.color;
-        originalAlpha = polygon.color.a;
-
-        // IMPORTANTE:
-        // La zona siempre debe poder recibir raycasts/clicks,
-        // incluso cuando su alpha sea 0.
+        // La zona debe poder recibir clics aunque su alpha sea 0.
         polygon.raycastTarget = true;
-
-        // Aplicar inmediatamente el estado global actual.
-        AplicarEstadoVisual();
-    }
-
-    private void AplicarEstadoVisual()
-    {
-        Color color = polygon.color;
-
-        if (ToggleZonasInteractivas.zonasActivas)
-        {
-            color.a = originalAlpha;
-        }
-        else
-        {
-            color.a = 0f;
-        }
-
-        polygon.color = color;
-        polygon.SetVerticesDirty();
     }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        // El hover SOLO modifica la apariencia cuando las zonas
-        // están visibles.
-        if (!ToggleZonasInteractivas.zonasActivas)
+        if (polygon == null || enHover) return;
+
+        // Solo hay hover si las zonas están visibles
+        if (!ToggleZonasInteractivas.zonasActivas || polygon.color.a <= 0f)
             return;
 
-        Color hoverColor = originalColor;
-        hoverColor.a = Mathf.Clamp01(originalAlpha + 0.3f);
+        // Guardamos el color ACTUAL, no el de Start()
+        colorAntesDeHover = polygon.color;
+        enHover = true;
 
+        Color hoverColor = colorAntesDeHover;
+        hoverColor.a = Mathf.Clamp01(colorAntesDeHover.a + alphaExtra);
         polygon.color = hoverColor;
-        polygon.SetVerticesDirty();
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        if (!ToggleZonasInteractivas.zonasActivas)
-            return;
+        RestaurarColor();
+    }
 
-        polygon.color = originalColor;
-        polygon.SetVerticesDirty();
+    void OnDisable()
+    {
+        RestaurarColor();
+    }
+
+    private void RestaurarColor()
+    {
+        if (!enHover || polygon == null) return;
+
+        Color color = colorAntesDeHover;
+
+        // Si el toggle se apagó durante el hover, respeta ese estado
+        if (!ToggleZonasInteractivas.zonasActivas)
+            color.a = 0f;
+
+        polygon.color = color;
+        enHover = false;
     }
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        // NO poner aquí:
-        // if (!ToggleZonasInteractivas.zonasActivas) return;
-
-        // El objetivo es que la zona siga siendo clickeable
+        // Sin comprobar zonasActivas: la zona sigue siendo clickeable
         // aunque visualmente tenga alpha = 0.
-
         Debug.Log("Clic detectado en: " + gameObject.name);
 
         switch (zonaID)
@@ -95,47 +87,17 @@ public class ZonaInteractiva : MonoBehaviour, IPointerEnterHandler, IPointerExit
                 break;
 
             case 2:
-                if (PlayerPrefs.GetInt("QuizAprobado_" + nombreTema, 0) == 0)
-                {
-                    if (panelAdvertencia != null)
-                    {
-                        panelAdvertencia.MostrarMensaje(
-                            "Debes aprobar el quiz 1 para poder acceder."
-                        );
-                    }
-
-                    return;
-                }
-
-                SceneManager.LoadScene(nombreEscena);
-                break;
-
             case 3:
-                if (PlayerPrefs.GetInt("QuizAprobado_" + nombreTema, 0) == 0)
-                {
-                    if (panelAdvertencia != null)
-                    {
-                        panelAdvertencia.MostrarMensaje(
-                            "Debes aprobar el quiz 2 para poder acceder."
-                        );
-                    }
-
-                    return;
-                }
-
-                SceneManager.LoadScene(nombreEscena);
-                break;
-
             case 4:
+                // zonaID 2 -> quiz 1, 3 -> quiz 2, 4 -> quiz 3
                 if (PlayerPrefs.GetInt("QuizAprobado_" + nombreTema, 0) == 0)
                 {
                     if (panelAdvertencia != null)
                     {
                         panelAdvertencia.MostrarMensaje(
-                            "Debes aprobar el quiz 3 para poder acceder."
+                            $"Debes aprobar el quiz {zonaID - 1} para poder acceder."
                         );
                     }
-
                     return;
                 }
 
@@ -143,9 +105,7 @@ public class ZonaInteractiva : MonoBehaviour, IPointerEnterHandler, IPointerExit
                 break;
 
             default:
-                Debug.LogWarning(
-                    $"[ZonaInteractiva] zonaID {zonaID} no tiene una acción asignada."
-                );
+                Debug.LogWarning($"[ZonaInteractiva] zonaID {zonaID} no tiene una acción asignada.");
                 break;
         }
     }

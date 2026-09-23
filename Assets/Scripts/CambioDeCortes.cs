@@ -5,8 +5,8 @@ using System.Collections.Generic;
 public class CambioDeCorte : MonoBehaviour
 {
     [Header("Referencias")]
-    public Dropdown dropdownCortes; // O TMP_Dropdown si usas TextMeshPro
-    public List<GameObject> cortes; // Asigna todos los cortes aquí (Corte1, Corte2, Corte3...)
+    public Dropdown dropdownCortes; 
+    public List<GameObject> cortes; 
 
     private int corteActual = 0;
 

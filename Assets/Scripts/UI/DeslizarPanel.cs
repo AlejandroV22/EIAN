@@ -24,8 +24,6 @@ public class DeslizarPanel : MonoBehaviour
 
         botonCerrar.onClick.AddListener(CerrarPanel);
         botonAbrir.onClick.AddListener(AbrirPanel);
-
-        // Asegúrate que al inicio el panel está abierto y el botón de abrir oculto
         botonAbrir.gameObject.SetActive(false);
     }
   
