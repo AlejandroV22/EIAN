@@ -39,25 +39,25 @@ EditorBuildSettings:
     path: Assets/Scenes/Quiz3.unity
     guid: b34f08c7c4378164797c42f6e71404e2
   - enabled: 1
-    path: Assets/Scenes/Recorte1.unity
+    path: Assets/Scenes/Cortes/Recorte1.unity
     guid: 07df7c81ab1458a4c80983db8c97bf1d
   - enabled: 1
-    path: Assets/Scenes/Recorte2.unity
+    path: Assets/Scenes/Cortes/Recorte2.unity
     guid: 299823fdaeaecb4419bed775d255650a
   - enabled: 1
-    path: Assets/Scenes/Recorte6.unity
+    path: Assets/Scenes/Cortes/Recorte6.unity
     guid: 66405f4c78209f144aff0df70744c498
   - enabled: 1
-    path: Assets/Scenes/Recorte7.unity
+    path: Assets/Scenes/Cortes/Recorte7.unity
     guid: f6b0afd27d9c67247a93efa5b3aa3f9a
   - enabled: 1
-    path: Assets/Scenes/Recorte9.unity
+    path: Assets/Scenes/Cortes/Recorte9.unity
     guid: b7ee9553479ab9f4fa8a17d2f86d1a1a
   - enabled: 1
-    path: Assets/Scenes/Recorte10.unity
+    path: Assets/Scenes/Cortes/Recorte10.unity
     guid: 7a2c2fa405357724d9552e0e6b7ac41d
   - enabled: 1
-    path: Assets/Scenes/Recorte11.unity
+    path: Assets/Scenes/Cortes/Recorte11.unity
     guid: 418c47707dad0f44aa8c6f0af6613f37
   - enabled: 1
     path: Assets/Scenes/CortePuente.unity
@@ -75,7 +75,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MenuMinijuegos.unity
     guid: e4003915a7fd41b4e8c678be6ab76976
   - enabled: 1
-    path: Assets/Scenes/Transversal.unity
+    path: Assets/Scenes/Cortes/Transversal.unity
     guid: 62a46534469473e43ae50df826dd7ae7
   - enabled: 1
     path: Assets/Scenes/MinijuegoColumnas.unity
