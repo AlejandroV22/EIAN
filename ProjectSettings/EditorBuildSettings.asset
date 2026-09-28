@@ -5,19 +5,22 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/VistaPrincipal.unity
     guid: 958ece609ecf51849a1c18f51356eace
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Recorte3.unity
     guid: 074eb61656b4d7740b095d8477114d93
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Recorte4.unity
     guid: 82928d417b3581943a9e50ba2248b201
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Recorte5.unity
     guid: 5556d6c1eb20c844c99965f32fee9475
   - enabled: 1
+    path: Assets/Scenes/Cortes/VistaPrincipal.unity
+    guid: 620e9a4a91028d245ac4b868229026c2
+  - enabled: 0
     path: Assets/Scenes/Recorte8.unity
     guid: 7b895dfdf6d8ace4782956e5acc77e36
   - enabled: 1
@@ -26,6 +29,21 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Quiz1.unity
     guid: 80ff9aa720e79394f9745d1c9db0bf16
+  - enabled: 1
+    path: Assets/Scenes/Cortes/Recorte3.unity
+    guid: 700556e2a5d75534695fef43464a53fc
+  - enabled: 1
+    path: Assets/Scenes/Cortes/Recorte4.unity
+    guid: 6c45ed80eb23c604e9732d196ec16aa0
+  - enabled: 1
+    path: Assets/Scenes/Cortes/Recorte5.unity
+    guid: bd10295597e834842b9d4367c9cd7082
+  - enabled: 1
+    path: Assets/Scenes/Cortes/Recorte8.unity
+    guid: aaae8f7bd4d4f3440999ecc59d87caac
+  - enabled: 1
+    path: Assets/Scenes/Cortes/TransicionMedulaPuente.unity
+    guid: 4d6e8d3d08c457e4f88a11aeb508e56c
   - enabled: 1
     path: Assets/Scenes/Quiz2.unity
     guid: 132b691308d9e8c43a85b98ad41ee479
@@ -61,7 +79,7 @@ EditorBuildSettings:
     guid: 418c47707dad0f44aa8c6f0af6613f37
   - enabled: 1
     path: Assets/Scenes/CortePuente.unity
-    guid: dca2c411db1b39245b7cb9b607567af5
+    guid: b224fa4b607ee6c4cb8d0bdcae91d741
   - enabled: 1
     path: Assets/Scenes/AnatCerebral.unity
     guid: 2cc199b7d0716e642aea3358dad83704

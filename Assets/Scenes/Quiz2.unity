@@ -378,6 +378,22 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3167322989757505686, guid: 1817f7b070001884d8f57c665f088d71, type: 3}
   m_PrefabInstance: {fileID: 34310877556093647}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &144504080 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3525386533006535534, guid: 1817f7b070001884d8f57c665f088d71, type: 3}
+  m_PrefabInstance: {fileID: 34310877556093647}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &144504082 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2947072081014755721, guid: 1817f7b070001884d8f57c665f088d71, type: 3}
+  m_PrefabInstance: {fileID: 34310877556093647}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 144504080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &179027191
 GameObject:
   m_ObjectHideFlags: 0
@@ -691,6 +707,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 2
   m_VerticalFit: 2
+--- !u!1 &592644312 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5464383628184903494, guid: 1817f7b070001884d8f57c665f088d71, type: 3}
+  m_PrefabInstance: {fileID: 34310877556093647}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &737455019 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6764449607807082867, guid: 1817f7b070001884d8f57c665f088d71, type: 3}
@@ -1684,6 +1705,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   normalColor: {r: 0, g: 0, b: 0, a: 1}
   hoverColor: {r: 0.9339623, g: 0.73747146, b: 0, a: 1}
+--- !u!114 &1686685932 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3343007155884904068, guid: 1817f7b070001884d8f57c665f088d71, type: 3}
+  m_PrefabInstance: {fileID: 34310877556093647}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1725577511
 GameObject:
   m_ObjectHideFlags: 0
@@ -2086,6 +2118,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 97059866}
     m_Modifications:
+    - target: {fileID: 2063235684385105091, guid: 1817f7b070001884d8f57c665f088d71, type: 3}
+      propertyPath: flecha
+      value: 
+      objectReference: {fileID: 592644312}
+    - target: {fileID: 2063235684385105091, guid: 1817f7b070001884d8f57c665f088d71, type: 3}
+      propertyPath: textoBoton
+      value: 
+      objectReference: {fileID: 1686685932}
     - target: {fileID: 2132291594525336359, guid: 1817f7b070001884d8f57c665f088d71, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2222,6 +2262,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7700316579591863239, guid: 1817f7b070001884d8f57c665f088d71, type: 3}
+      propertyPath: flecha
+      value: 
+      objectReference: {fileID: 144504080}
+    - target: {fileID: 7700316579591863239, guid: 1817f7b070001884d8f57c665f088d71, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7700316579591863239, guid: 1817f7b070001884d8f57c665f088d71, type: 3}
+      propertyPath: textoBoton
+      value: 
+      objectReference: {fileID: 144504082}
     - target: {fileID: 8666467689311607942, guid: 1817f7b070001884d8f57c665f088d71, type: 3}
       propertyPath: m_text
       value: "Respuestas correctas: {respuestasCorrectas}/10\\nPorcentaje: {porcentaje}%\\n
