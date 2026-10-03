@@ -662,6 +662,30 @@ PrefabInstance:
       propertyPath: m_RaycastTarget
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3845880747862923600, guid: 265ac7414956df84d81e4453205b8590, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845880747862923600, guid: 265ac7414956df84d81e4453205b8590, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845880747862923600, guid: 265ac7414956df84d81e4453205b8590, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845880747862923600, guid: 265ac7414956df84d81e4453205b8590, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845880747862923600, guid: 265ac7414956df84d81e4453205b8590, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845880747862923600, guid: 265ac7414956df84d81e4453205b8590, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4104257242824532445, guid: 265ac7414956df84d81e4453205b8590, type: 3}
       propertyPath: SceneName
       value: Recorte 1
@@ -670,6 +694,18 @@ PrefabInstance:
       propertyPath: miniaturaRecorte3
       value: 
       objectReference: {fileID: 698243875}
+    - target: {fileID: 5309662204127908181, guid: 265ac7414956df84d81e4453205b8590, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5309662204127908181, guid: 265ac7414956df84d81e4453205b8590, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5309662204127908181, guid: 265ac7414956df84d81e4453205b8590, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5369947800219731329, guid: 265ac7414956df84d81e4453205b8590, type: 3}
       propertyPath: m_Name
       value: PanelInfoRecorte
@@ -780,6 +816,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7195733166359715069, guid: 265ac7414956df84d81e4453205b8590, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7877254307417979461, guid: 265ac7414956df84d81e4453205b8590, type: 3}
+      propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7980408622812870598, guid: 265ac7414956df84d81e4453205b8590, type: 3}
@@ -11999,18 +12039,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 130184516}
     m_Modifications:
-    - target: {fileID: 2735127869831306343, guid: 8bbf7077b44272545a82ed2c1fa74f39, type: 3}
-      propertyPath: m_text
-      value: <-
-      objectReference: {fileID: 0}
-    - target: {fileID: 4439788736351058390, guid: 8bbf7077b44272545a82ed2c1fa74f39, type: 3}
-      propertyPath: m_Transition
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4439788736351058390, guid: 8bbf7077b44272545a82ed2c1fa74f39, type: 3}
-      propertyPath: m_Colors.m_PressedColor.a
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5366792491441569850, guid: 8bbf7077b44272545a82ed2c1fa74f39, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -12089,14 +12117,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5366792491441569850, guid: 8bbf7077b44272545a82ed2c1fa74f39, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6547176080402779291, guid: 8bbf7077b44272545a82ed2c1fa74f39, type: 3}
-      propertyPath: nombreEscena
-      value: VistaPrincipal
-      objectReference: {fileID: 0}
-    - target: {fileID: 6635412544438810917, guid: 8bbf7077b44272545a82ed2c1fa74f39, type: 3}
-      propertyPath: m_Color.a
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8172960602360995395, guid: 8bbf7077b44272545a82ed2c1fa74f39, type: 3}

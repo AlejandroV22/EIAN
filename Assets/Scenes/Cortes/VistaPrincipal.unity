@@ -2982,20 +2982,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6061332164994255319, guid: 8bbf7077b44272545a82ed2c1fa74f39, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6547176080402779291, guid: 8bbf7077b44272545a82ed2c1fa74f39, type: 3}
       propertyPath: nombreEscena
       value: MenuPrincipal
       objectReference: {fileID: 0}
     - target: {fileID: 6635412544438810917, guid: 8bbf7077b44272545a82ed2c1fa74f39, type: 3}
-      propertyPath: m_Color.a
+      propertyPath: m_Type
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6635412544438810917, guid: 8bbf7077b44272545a82ed2c1fa74f39, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 34f639fb30aa33447a707b6d3b709414, type: 3}
+    - target: {fileID: 6635412544438810917, guid: 8bbf7077b44272545a82ed2c1fa74f39, type: 3}
+      propertyPath: m_Color.a
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8172960602360995395, guid: 8bbf7077b44272545a82ed2c1fa74f39, type: 3}
       propertyPath: m_Name
       value: VolverBoton
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 4467441502293272192, guid: 8bbf7077b44272545a82ed2c1fa74f39, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8bbf7077b44272545a82ed2c1fa74f39, type: 3}
@@ -5446,6 +5459,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 130184516}
     m_Modifications:
+    - target: {fileID: 2408230954819045031, guid: c36ae137e3665c74b88529d2b2ee3571, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2846618984308822782, guid: c36ae137e3665c74b88529d2b2ee3571, type: 3}
       propertyPath: m_fontSize
       value: 30
@@ -5484,7 +5501,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4919696472005001289, guid: c36ae137e3665c74b88529d2b2ee3571, type: 3}
       propertyPath: m_Color.a
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7163759457397360159, guid: c36ae137e3665c74b88529d2b2ee3571, type: 3}
       propertyPath: m_Pivot.x
@@ -5512,11 +5529,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7163759457397360159, guid: c36ae137e3665c74b88529d2b2ee3571, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 160
+      value: 256
       objectReference: {fileID: 0}
     - target: {fileID: 7163759457397360159, guid: c36ae137e3665c74b88529d2b2ee3571, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 70
+      value: 256
       objectReference: {fileID: 0}
     - target: {fileID: 7163759457397360159, guid: c36ae137e3665c74b88529d2b2ee3571, type: 3}
       propertyPath: m_LocalPosition.x
