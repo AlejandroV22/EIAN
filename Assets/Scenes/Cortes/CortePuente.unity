@@ -723,6 +723,30 @@ PrefabInstance:
       propertyPath: m_RaycastTarget
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3845880747862923600, guid: 265ac7414956df84d81e4453205b8590, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845880747862923600, guid: 265ac7414956df84d81e4453205b8590, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845880747862923600, guid: 265ac7414956df84d81e4453205b8590, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845880747862923600, guid: 265ac7414956df84d81e4453205b8590, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845880747862923600, guid: 265ac7414956df84d81e4453205b8590, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845880747862923600, guid: 265ac7414956df84d81e4453205b8590, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4104257242824532445, guid: 265ac7414956df84d81e4453205b8590, type: 3}
       propertyPath: SceneName
       value: Recorte 1
@@ -731,6 +755,18 @@ PrefabInstance:
       propertyPath: miniaturaRecorte3
       value: 
       objectReference: {fileID: 698243875}
+    - target: {fileID: 5309662204127908181, guid: 265ac7414956df84d81e4453205b8590, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5309662204127908181, guid: 265ac7414956df84d81e4453205b8590, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5309662204127908181, guid: 265ac7414956df84d81e4453205b8590, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5369947800219731329, guid: 265ac7414956df84d81e4453205b8590, type: 3}
       propertyPath: m_Name
       value: PanelInfoRecorte
@@ -843,6 +879,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7877254307417979461, guid: 265ac7414956df84d81e4453205b8590, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7980408622812870598, guid: 265ac7414956df84d81e4453205b8590, type: 3}
       propertyPath: m_text
       value: "<b>Generalidades:</b> centro nervioso noradren\xE9rgico que participa
@@ -907,6 +947,18 @@ PrefabInstance:
     - target: {fileID: 7980408622812870598, guid: 265ac7414956df84d81e4453205b8590, type: 3}
       propertyPath: m_HorizontalAlignment
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8228003489796785650, guid: 265ac7414956df84d81e4453205b8590, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8228003489796785650, guid: 265ac7414956df84d81e4453205b8590, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8228003489796785650, guid: 265ac7414956df84d81e4453205b8590, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8995823776193365421, guid: 265ac7414956df84d81e4453205b8590, type: 3}
       propertyPath: m_SizeDelta.x

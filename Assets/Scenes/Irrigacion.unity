@@ -4583,26 +4583,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2092135109}
     m_Modifications:
-    - target: {fileID: 2735127869831306343, guid: 8bbf7077b44272545a82ed2c1fa74f39, type: 3}
-      propertyPath: m_fontColor.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2735127869831306343, guid: 8bbf7077b44272545a82ed2c1fa74f39, type: 3}
-      propertyPath: m_fontColor.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2735127869831306343, guid: 8bbf7077b44272545a82ed2c1fa74f39, type: 3}
-      propertyPath: m_fontColor.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2735127869831306343, guid: 8bbf7077b44272545a82ed2c1fa74f39, type: 3}
-      propertyPath: m_fontColor32.rgba
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 4439788736351058390, guid: 8bbf7077b44272545a82ed2c1fa74f39, type: 3}
-      propertyPath: m_Transition
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5366792491441569850, guid: 8bbf7077b44272545a82ed2c1fa74f39, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -4634,18 +4614,6 @@ PrefabInstance:
     - target: {fileID: 5366792491441569850, guid: 8bbf7077b44272545a82ed2c1fa74f39, type: 3}
       propertyPath: m_SizeDelta.y
       value: 45.5849
-      objectReference: {fileID: 0}
-    - target: {fileID: 5366792491441569850, guid: 8bbf7077b44272545a82ed2c1fa74f39, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.116819
-      objectReference: {fileID: 0}
-    - target: {fileID: 5366792491441569850, guid: 8bbf7077b44272545a82ed2c1fa74f39, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.116819
-      objectReference: {fileID: 0}
-    - target: {fileID: 5366792491441569850, guid: 8bbf7077b44272545a82ed2c1fa74f39, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.116819
       objectReference: {fileID: 0}
     - target: {fileID: 5366792491441569850, guid: 8bbf7077b44272545a82ed2c1fa74f39, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4693,14 +4661,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5366792491441569850, guid: 8bbf7077b44272545a82ed2c1fa74f39, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6547176080402779291, guid: 8bbf7077b44272545a82ed2c1fa74f39, type: 3}
-      propertyPath: nombreEscena
-      value: AnatCerebral
-      objectReference: {fileID: 0}
-    - target: {fileID: 6635412544438810917, guid: 8bbf7077b44272545a82ed2c1fa74f39, type: 3}
-      propertyPath: m_Color.a
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8172960602360995395, guid: 8bbf7077b44272545a82ed2c1fa74f39, type: 3}
@@ -5821,7 +5781,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 111744180}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.5524225
+  m_Size: 0.52303094
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -12673,32 +12633,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2092135109}
     m_Modifications:
-    - target: {fileID: 2735127869831306343, guid: 8bbf7077b44272545a82ed2c1fa74f39, type: 3}
-      propertyPath: m_text
-      value: 'QUICES
-
-'
-      objectReference: {fileID: 0}
-    - target: {fileID: 2735127869831306343, guid: 8bbf7077b44272545a82ed2c1fa74f39, type: 3}
-      propertyPath: m_fontColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2735127869831306343, guid: 8bbf7077b44272545a82ed2c1fa74f39, type: 3}
-      propertyPath: m_fontColor.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2735127869831306343, guid: 8bbf7077b44272545a82ed2c1fa74f39, type: 3}
-      propertyPath: m_fontColor.r
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2735127869831306343, guid: 8bbf7077b44272545a82ed2c1fa74f39, type: 3}
-      propertyPath: m_fontColor32.rgba
-      value: 4278190080
-      objectReference: {fileID: 0}
-    - target: {fileID: 4439788736351058390, guid: 8bbf7077b44272545a82ed2c1fa74f39, type: 3}
-      propertyPath: m_Transition
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5366792491441569850, guid: 8bbf7077b44272545a82ed2c1fa74f39, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -12730,18 +12664,6 @@ PrefabInstance:
     - target: {fileID: 5366792491441569850, guid: 8bbf7077b44272545a82ed2c1fa74f39, type: 3}
       propertyPath: m_SizeDelta.y
       value: 45.5849
-      objectReference: {fileID: 0}
-    - target: {fileID: 5366792491441569850, guid: 8bbf7077b44272545a82ed2c1fa74f39, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.116819
-      objectReference: {fileID: 0}
-    - target: {fileID: 5366792491441569850, guid: 8bbf7077b44272545a82ed2c1fa74f39, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.116819
-      objectReference: {fileID: 0}
-    - target: {fileID: 5366792491441569850, guid: 8bbf7077b44272545a82ed2c1fa74f39, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.116819
       objectReference: {fileID: 0}
     - target: {fileID: 5366792491441569850, guid: 8bbf7077b44272545a82ed2c1fa74f39, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12791,17 +12713,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6547176080402779291, guid: 8bbf7077b44272545a82ed2c1fa74f39, type: 3}
-      propertyPath: nombreEscena
-      value: Quiz3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6635412544438810917, guid: 8bbf7077b44272545a82ed2c1fa74f39, type: 3}
-      propertyPath: m_Color.a
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8172960602360995395, guid: 8bbf7077b44272545a82ed2c1fa74f39, type: 3}
       propertyPath: m_Name
       value: VolverQuiz
+      objectReference: {fileID: 0}
+    - target: {fileID: 8172960602360995395, guid: 8bbf7077b44272545a82ed2c1fa74f39, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

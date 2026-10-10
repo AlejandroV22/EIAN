@@ -1194,6 +1194,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 0, b: 0, a: 0.5686275}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  invisible: 0
   vectorColor: {r: 1, g: 0, b: 0, a: 0.5686275}
   points:
   - {x: 100, y: 0}
@@ -1356,8 +1357,8 @@ RectTransform:
   m_Children:
   - {fileID: 67278816}
   - {fileID: 6053291743075876983}
-  - {fileID: 140399501}
   - {fileID: 1070991062}
+  - {fileID: 140399501}
   - {fileID: 1450937363}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3121,17 +3122,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 9162815392540484975, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
   m_PrefabInstance: {fileID: 365638627}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &461429070 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6039716507628118972, guid: 5eccde1fda8387945a6645146f805dc7, type: 3}
-  m_PrefabInstance: {fileID: 67278815}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 195320702}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4053bc1123036e943bf12d7d6de82d50, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -3450,6 +3440,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 0, b: 0, a: 0.5686275}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  invisible: 0
   vectorColor: {r: 1, g: 0, b: 0, a: 0.5686275}
   points:
   - {x: 100, y: 0}
@@ -4445,26 +4436,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 130184516}
     m_Modifications:
-    - target: {fileID: 2846618984308822782, guid: c36ae137e3665c74b88529d2b2ee3571, type: 3}
-      propertyPath: m_fontSize
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 2846618984308822782, guid: c36ae137e3665c74b88529d2b2ee3571, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 4222417979066087168, guid: c36ae137e3665c74b88529d2b2ee3571, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 461429070}
-    - target: {fileID: 4222417979066087168, guid: c36ae137e3665c74b88529d2b2ee3571, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: CenterImage
-      objectReference: {fileID: 0}
-    - target: {fileID: 4919696472005001289, guid: c36ae137e3665c74b88529d2b2ee3571, type: 3}
-      propertyPath: m_Color.a
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7163759457397360159, guid: c36ae137e3665c74b88529d2b2ee3571, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -4491,11 +4462,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7163759457397360159, guid: c36ae137e3665c74b88529d2b2ee3571, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 160
+      value: 256
       objectReference: {fileID: 0}
     - target: {fileID: 7163759457397360159, guid: c36ae137e3665c74b88529d2b2ee3571, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 70
+      value: 256
       objectReference: {fileID: 0}
     - target: {fileID: 7163759457397360159, guid: c36ae137e3665c74b88529d2b2ee3571, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4531,7 +4502,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7163759457397360159, guid: c36ae137e3665c74b88529d2b2ee3571, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -321
+      value: -305
       objectReference: {fileID: 0}
     - target: {fileID: 7163759457397360159, guid: c36ae137e3665c74b88529d2b2ee3571, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6449,6 +6420,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 0, b: 0, a: 0.5686275}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  invisible: 0
   vectorColor: {r: 1, g: 0, b: 0, a: 0.5686275}
   points:
   - {x: 53.051247, y: 50.077057}
@@ -7380,6 +7352,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 0, b: 0, a: 0.5686275}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  invisible: 0
   vectorColor: {r: 1, g: 0, b: 0, a: 0.5686275}
   points:
   - {x: 53.051247, y: 50.077057}
@@ -9064,6 +9037,10 @@ PrefabInstance:
     - target: {fileID: 5366792491441569850, guid: 8bbf7077b44272545a82ed2c1fa74f39, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6547176080402779291, guid: 8bbf7077b44272545a82ed2c1fa74f39, type: 3}
+      propertyPath: nombreEscena
+      value: VistaPrincipal
       objectReference: {fileID: 0}
     - target: {fileID: 8172960602360995395, guid: 8bbf7077b44272545a82ed2c1fa74f39, type: 3}
       propertyPath: m_Name

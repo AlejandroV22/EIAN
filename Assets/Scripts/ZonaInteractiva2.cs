@@ -4,6 +4,11 @@ using UnityEngine.UI;
 
 public class ZonaInteractiva2 : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
 {
+    private const string NOMBRE_PANEL = "PanelInfoRecorte";
+
+    // Cache compartido: la búsqueda se hace una sola vez para todas las zonas
+    private static InfoPanel panelCache;
+
     public string infoTexto;
     public InfoPanel panel;
 
@@ -18,6 +23,12 @@ public class ZonaInteractiva2 : MonoBehaviour, IPointerEnterHandler, IPointerExi
     private Color colorAntesDeHover;
     private bool enHover;
 
+    void Awake()
+    {
+        if (panel == null)
+            panel = BuscarPanel();
+    }
+
     void Start()
     {
         graphic = GetComponent<Graphic>();
@@ -29,13 +40,33 @@ public class ZonaInteractiva2 : MonoBehaviour, IPointerEnterHandler, IPointerExi
         }
     }
 
+    private static InfoPanel BuscarPanel()
+    {
+        // Si ya lo encontró otra zona (y no fue destruido al cambiar de escena), se reutiliza
+        if (panelCache != null) return panelCache;
+
+        // Include = también encuentra objetos desactivados en la jerarquía
+        InfoPanel[] paneles = FindObjectsByType<InfoPanel>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+
+        foreach (InfoPanel p in paneles)
+        {
+            if (p.gameObject.name == NOMBRE_PANEL)
+            {
+                panelCache = p;
+                return p;
+            }
+        }
+
+        Debug.LogWarning($"[ZonaInteractiva2] No se encontró ningún InfoPanel llamado '{NOMBRE_PANEL}' en la escena.");
+        return null;
+    }
+
     public void OnPointerEnter(PointerEventData eventData)
     {
         if (graphic == null || enHover) return;
 
         if (ToggleZonasInteractivas.zonasActivas && graphic.color.a > 0)
         {
-           
             colorAntesDeHover = graphic.color;
             enHover = true;
 

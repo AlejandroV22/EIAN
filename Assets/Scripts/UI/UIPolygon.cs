@@ -9,8 +9,12 @@ using UnityEditor;
 [RequireComponent(typeof(CanvasRenderer))]
 public class UIPolygon : Graphic
 {
-    
+    [Header("Visibilidad")]
+    [Tooltip("Si está activo, el polígono no se dibuja pero sigue recibiendo raycasts/eventos.")]
+    public bool invisible = false;
+
     public Color vectorColor = new Color(1f, 0f, 0f, 1f);
+
     [SerializeField]
     private List<Vector2> points = new List<Vector2>()
     {
@@ -18,18 +22,21 @@ public class UIPolygon : Graphic
         new Vector2(50, -50),
         new Vector2(0, 50)
     };
-    
+
     public List<Vector2> Points => points;
-    
 
     protected override void OnPopulateMesh(VertexHelper vh)
     {
         vh.Clear();
         if (points == null || points.Count < 3) return;
 
+        // Si es invisible, se conserva la malla pero con alpha 0
+        Color32 vertexColor = color;
+        if (invisible) vertexColor.a = 0;
+
         for (int i = 0; i < points.Count; i++)
         {
-            vh.AddVert(points[i], color, Vector2.zero);
+            vh.AddVert(points[i], vertexColor, Vector2.zero);
         }
 
         for (int i = 1; i < points.Count - 1; i++)
@@ -37,6 +44,15 @@ public class UIPolygon : Graphic
             vh.AddTriangle(0, i, i + 1);
         }
     }
+
+#if UNITY_EDITOR
+    // Refresca la malla al cambiar "invisible" (o cualquier valor) en el Inspector
+    protected override void OnValidate()
+    {
+        base.OnValidate();
+        SetVerticesDirty();
+    }
+#endif
 
     public void MakeOval(float width, float height, int segments = 64)
     {
@@ -51,13 +67,11 @@ public class UIPolygon : Graphic
         SetVerticesDirty();
     }
 
-
-    #if UNITY_EDITOR
+#if UNITY_EDITOR
     private void OnDrawGizmos()
     {
         if (points == null || points.Count < 2) return;
         Gizmos.color = vectorColor;
-        Vector3 offset = transform.position;
         for (int i = 0; i < points.Count; i++)
         {
             Vector3 p1 = transform.TransformPoint(points[i]);
@@ -65,13 +79,12 @@ public class UIPolygon : Graphic
             Gizmos.DrawLine(p1, p2);
         }
     }
-    #endif
-    
-        public void UpdateRectTransformToFit()
+#endif
+
+    public void UpdateRectTransformToFit()
     {
         if (points == null || points.Count == 0) return;
 
-        // 1. Encontrar los límites en el espacio local actual
         float minX = float.MaxValue, maxX = float.MinValue;
         float minY = float.MaxValue, maxY = float.MinValue;
 
@@ -86,23 +99,19 @@ public class UIPolygon : Graphic
         float width = maxX - minX;
         float height = maxY - minY;
 
-        // Si el bounding box es casi nulo, evitar divisiones por cero
         if (width <= 0.001f || height <= 0.001f) return;
 
-        RectTransform rt = rectTransform; // Graphic ya tiene la propiedad rectTransform optimizada
+        RectTransform rt = rectTransform;
 
-    #if UNITY_EDITOR
+#if UNITY_EDITOR
         Undo.RecordObjects(new Object[] { rt, this }, "Fit Polygon to RectTransform");
-    #endif
+#endif
 
-        // 2. Determinar la posición central actual de la forma respecto al RectTransform
         Vector2 centerOffset = new Vector2(minX + width * 0.5f, minY + height * 0.5f);
 
-        // 3. Mover el RectTransform a esa nueva posición central
         rt.anchoredPosition += centerOffset;
         rt.sizeDelta = new Vector2(width, height);
 
-        // 4. Re-centrar los vértices en (0,0) local
         for (int i = 0; i < points.Count; i++)
         {
             points[i] -= centerOffset;
@@ -110,10 +119,9 @@ public class UIPolygon : Graphic
 
         SetVerticesDirty();
 
-    #if UNITY_EDITOR
+#if UNITY_EDITOR
         EditorUtility.SetDirty(this);
         EditorUtility.SetDirty(rt);
-    #endif
+#endif
     }
-
 }

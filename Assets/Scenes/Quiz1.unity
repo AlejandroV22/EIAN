@@ -2112,9 +2112,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 97059866}
     m_Modifications:
+    - target: {fileID: 2132291594525336359, guid: 1817f7b070001884d8f57c665f088d71, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1086.63
+      objectReference: {fileID: 0}
+    - target: {fileID: 2132291594525336359, guid: 1817f7b070001884d8f57c665f088d71, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 96.94
+      objectReference: {fileID: 0}
     - target: {fileID: 6764449607807082867, guid: 1817f7b070001884d8f57c665f088d71, type: 3}
       propertyPath: m_Name
       value: Panel Final
+      objectReference: {fileID: 0}
+    - target: {fileID: 6764449607807082867, guid: 1817f7b070001884d8f57c665f088d71, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7621759259063289239, guid: 1817f7b070001884d8f57c665f088d71, type: 3}
       propertyPath: m_Pivot.x
