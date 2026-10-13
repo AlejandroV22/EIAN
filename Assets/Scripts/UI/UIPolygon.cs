@@ -11,7 +11,7 @@ public class UIPolygon : Graphic
 {
     [Header("Visibilidad")]
     [Tooltip("Si está activo, el polígono no se dibuja pero sigue recibiendo raycasts/eventos.")]
-    public bool invisible = false;
+    public bool invisible = true; 
 
     public Color vectorColor = new Color(1f, 0f, 0f, 1f);
 
@@ -46,7 +46,6 @@ public class UIPolygon : Graphic
     }
 
 #if UNITY_EDITOR
-    // Refresca la malla al cambiar "invisible" (o cualquier valor) en el Inspector
     protected override void OnValidate()
     {
         base.OnValidate();
