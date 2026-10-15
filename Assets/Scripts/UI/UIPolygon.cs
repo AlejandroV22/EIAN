@@ -7,7 +7,7 @@ using UnityEditor;
 
 [ExecuteAlways]
 [RequireComponent(typeof(CanvasRenderer))]
-public class UIPolygon : Graphic
+public class UIPolygon : Graphic, ICanvasRaycastFilter
 {
     [Header("Visibilidad")]
     [Tooltip("Si está activo, el polígono no se dibuja pero sigue recibiendo raycasts/eventos.")]
@@ -30,7 +30,6 @@ public class UIPolygon : Graphic
         vh.Clear();
         if (points == null || points.Count < 3) return;
 
-        // Si es invisible, se conserva la malla pero con alpha 0
         Color32 vertexColor = color;
         if (invisible) vertexColor.a = 0;
 
@@ -122,5 +121,42 @@ public class UIPolygon : Graphic
         EditorUtility.SetDirty(this);
         EditorUtility.SetDirty(rt);
 #endif
+    }
+
+
+    public bool IsRaycastLocationValid(Vector2 screenPoint, Camera eventCamera)
+    {
+        if (points == null || points.Count < 3) return false;
+
+        Vector2 localPoint;
+        if (!RectTransformUtility.ScreenPointToLocalPointInRectangle(
+                rectTransform, screenPoint, eventCamera, out localPoint))
+        {
+            return false;
+        }
+
+        return EstaDentroDelPoligono(localPoint);
+    }
+
+    private bool EstaDentroDelPoligono(Vector2 punto)
+    {
+        bool dentro = false;
+        int j = points.Count - 1;
+
+        for (int i = 0; i < points.Count; i++)
+        {
+            Vector2 pi = points[i];
+            Vector2 pj = points[j];
+
+            if ((pi.y > punto.y) != (pj.y > punto.y) &&
+                punto.x < (pj.x - pi.x) * (punto.y - pi.y) / (pj.y - pi.y) + pi.x)
+            {
+                dentro = !dentro;
+            }
+
+            j = i;
+        }
+
+        return dentro;
     }
 }
