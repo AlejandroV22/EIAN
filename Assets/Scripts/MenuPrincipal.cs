@@ -6,7 +6,7 @@ public class MenuPrincipal : MonoBehaviour
 {
     public void TalloCerebral()
     {
-        SceneManager.LoadScene("VistaPrincipal");
+        SceneManager.LoadScene("MenuTallo");
     }
     public void AnatCerebral()
     {
