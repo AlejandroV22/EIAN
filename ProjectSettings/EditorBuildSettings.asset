@@ -36,6 +36,27 @@ EditorBuildSettings:
     path: Assets/Scenes/Cortes/Recorte4.unity
     guid: 6c45ed80eb23c604e9732d196ec16aa0
   - enabled: 1
+    path: Assets/Scenes/Cortes/Arterias.unity
+    guid: bca1e06466e48b841b1f22dd9dc9cf1b
+  - enabled: 1
+    path: Assets/Scenes/Cortes/MesencefaloInferior.unity
+    guid: 9fdeca1ce6081fb4ab30f94ec442d08d
+  - enabled: 1
+    path: Assets/Scenes/Cortes/MesencefaloSuperior.unity
+    guid: 5fe9f94e4866db04da757b3256eb6aee
+  - enabled: 1
+    path: Assets/Scenes/Cortes/PuenteCorteInferior.unity
+    guid: 6979679e04708a646832d2b3c7573f69
+  - enabled: 1
+    path: Assets/Scenes/Cortes/PuenteCorteSuperior.unity
+    guid: 8fbe582766aa3534dbf8050db2731762
+  - enabled: 1
+    path: Assets/Scenes/MenuTallo.unity
+    guid: 99f7d88d497a29c4b9d938e41500889b
+  - enabled: 1
+    path: Assets/Scenes/PressStart.unity
+    guid: b79b3ac1c25e2d94fa7325661c6e0907
+  - enabled: 1
     path: Assets/Scenes/Cortes/Recorte5.unity
     guid: bd10295597e834842b9d4367c9cd7082
   - enabled: 1
