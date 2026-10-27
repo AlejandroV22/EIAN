@@ -31,7 +31,6 @@ public class DragImage : MonoBehaviour, IPointerDownHandler, IDragHandler
 
     void OnDestroy()
     {
-        // Evita dejar un listener apuntando a un objeto destruido
         if (botonCentrar != null)
             botonCentrar.onClick.RemoveListener(CenterImage);
     }
