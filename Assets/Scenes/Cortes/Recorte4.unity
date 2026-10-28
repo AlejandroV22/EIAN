@@ -128,6 +128,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1879333615}
     m_Modifications:
     - target: {fileID: 3553973410993547867, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
+      propertyPath: invisible
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3553973410993547867, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: points.Array.size
       value: 64
       objectReference: {fileID: 0}
@@ -766,6 +770,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1879333615}
     m_Modifications:
+    - target: {fileID: 3553973410993547867, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
+      propertyPath: invisible
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3553973410993547867, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: points.Array.size
       value: 64
@@ -1441,6 +1449,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1879333615}
     m_Modifications:
+    - target: {fileID: 3553973410993547867, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
+      propertyPath: invisible
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3553973410993547867, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: points.Array.size
       value: 64
@@ -2472,6 +2484,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1879333615}
     m_Modifications:
     - target: {fileID: 3553973410993547867, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
+      propertyPath: invisible
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3553973410993547867, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: points.Array.size
       value: 6
       objectReference: {fileID: 0}
@@ -2646,6 +2662,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1879333615}
     m_Modifications:
+    - target: {fileID: 3553973410993547867, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
+      propertyPath: invisible
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3553973410993547867, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: points.Array.size
       value: 64
@@ -3285,6 +3305,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1879333615}
     m_Modifications:
+    - target: {fileID: 3553973410993547867, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
+      propertyPath: invisible
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3553973410993547867, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: points.Array.size
       value: 64
@@ -4613,7 +4637,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 0, b: 0, a: 0.5686275}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  invisible: 0
+  invisible: 1
   vectorColor: {r: 1, g: 0, b: 0, a: 0.5686275}
   points:
   - {x: 100, y: 0}
@@ -4977,6 +5001,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1879333615}
     m_Modifications:
+    - target: {fileID: 3553973410993547867, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
+      propertyPath: invisible
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3553973410993547867, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: points.Array.size
       value: 64
@@ -5616,6 +5644,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1879333615}
     m_Modifications:
+    - target: {fileID: 3553973410993547867, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
+      propertyPath: invisible
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3553973410993547867, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: points.Array.size
       value: 64
@@ -6357,6 +6389,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1879333615}
     m_Modifications:
+    - target: {fileID: 3553973410993547867, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
+      propertyPath: invisible
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3553973410993547867, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: points.Array.size
       value: 64
@@ -7106,6 +7142,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1879333615}
     m_Modifications:
     - target: {fileID: 3553973410993547867, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
+      propertyPath: invisible
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3553973410993547867, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: points.Array.size
       value: 64
       objectReference: {fileID: 0}
@@ -7746,6 +7786,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1879333615}
     m_Modifications:
     - target: {fileID: 3553973410993547867, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
+      propertyPath: invisible
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3553973410993547867, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: points.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -8120,6 +8164,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1879333615}
     m_Modifications:
     - target: {fileID: 3553973410993547867, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
+      propertyPath: invisible
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3553973410993547867, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: points.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -8427,7 +8475,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 0, b: 0, a: 0.5686275}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  invisible: 0
+  invisible: 1
   vectorColor: {r: 1, g: 0, b: 0, a: 0.5686275}
   points:
   - {x: 50.002987, y: 49.965595}
@@ -8857,7 +8905,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 0, b: 0, a: 0.5686275}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  invisible: 0
+  invisible: 1
   vectorColor: {r: 1, g: 0, b: 0, a: 0.5686275}
   points:
   - {x: 100, y: 0}
@@ -9007,6 +9055,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1879333615}
     m_Modifications:
+    - target: {fileID: 3553973410993547867, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
+      propertyPath: invisible
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3553973410993547867, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: points.Array.size
       value: 64
@@ -9647,6 +9699,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1879333615}
     m_Modifications:
     - target: {fileID: 3553973410993547867, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
+      propertyPath: invisible
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3553973410993547867, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: points.Array.size
       value: 64
       objectReference: {fileID: 0}
@@ -10285,6 +10341,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1879333615}
     m_Modifications:
+    - target: {fileID: 3553973410993547867, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
+      propertyPath: invisible
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3553973410993547867, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: points.Array.size
       value: 64
@@ -10926,6 +10986,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1879333615}
     m_Modifications:
     - target: {fileID: 3553973410993547867, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
+      propertyPath: invisible
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3553973410993547867, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: points.Array.size
       value: 6
       objectReference: {fileID: 0}
@@ -11258,7 +11322,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 0, b: 0, a: 0.5686275}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  invisible: 0
+  invisible: 1
   vectorColor: {r: 1, g: 0, b: 0, a: 0.5686275}
   points:
   - {x: 100, y: 0}
@@ -11390,6 +11454,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1879333615}
     m_Modifications:
+    - target: {fileID: 3553973410993547867, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
+      propertyPath: invisible
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3553973410993547867, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: points.Array.size
       value: 64
@@ -12191,6 +12259,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1879333615}
     m_Modifications:
+    - target: {fileID: 3553973410993547867, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
+      propertyPath: invisible
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3553973410993547867, guid: af52e4441b1b0b44089cfa445ca0cb9e, type: 3}
       propertyPath: points.Array.size
       value: 64

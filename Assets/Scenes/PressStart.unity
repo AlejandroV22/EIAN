@@ -569,8 +569,9 @@ GameObject:
   - component: {fileID: 1916001941}
   - component: {fileID: 1916001943}
   - component: {fileID: 1916001942}
+  - component: {fileID: 1916001944}
   m_Layer: 5
-  m_Name: PressStart
+  m_Name: PressStartImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -633,6 +634,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1916001940}
   m_CullTransparentMesh: 1
+--- !u!114 &1916001944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916001940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03000483650e372408318dc85655587a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidad: 1.5
+  alphaMinimo: 0
+  alphaMaximo: 1
 --- !u!1 &1917712132
 GameObject:
   m_ObjectHideFlags: 0
