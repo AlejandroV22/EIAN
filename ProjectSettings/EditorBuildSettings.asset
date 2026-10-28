@@ -42,6 +42,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Cortes/Recorte8.unity
     guid: aaae8f7bd4d4f3440999ecc59d87caac
   - enabled: 1
+    path: Assets/Scenes/MenuTallo.unity
+    guid: 99f7d88d497a29c4b9d938e41500889b
+  - enabled: 1
     path: Assets/Scenes/Cortes/TransicionMedulaPuente.unity
     guid: 4d6e8d3d08c457e4f88a11aeb508e56c
   - enabled: 1
@@ -115,4 +118,3 @@ EditorBuildSettings:
     guid: 0eb17d43c018a3946b723d28b11bcf17
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
-  m_UseUCBPForAssetBundles: 0
