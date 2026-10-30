@@ -13,33 +13,28 @@ public class AvatarData
 
 public class AvatarManager : MonoBehaviour
 {
-    [Header("Referencias")]
+    [Header("Datos compartidos")]
+    public CatalogoAvatares catalogo;
+
+    [Header("Referencias (opcionales según la escena)")]
     public Image imagenAvatar;
     public TextMeshProUGUI nombreAvatar;
-    public TMP_Dropdown dropdownAvatar;
-
-    [Header("Avatares (en el mismo orden que el dropdown)")]
-    public AvatarData[] avatares;   // Avatar 1, 2, 3, 4
-
-    [Header("Temas del quiz (en orden)")]
-    public string[] nombresTemas;
-
-    [Header("Umbrales de progreso (cantidad de quizzes aprobados)")]
-    public int quizzesParaIntermedio = 1;
-    public int quizzesParaAvanzado = 3;
+    public TMP_Dropdown dropdownAvatar;   
 
     private const string KeyAvatarSeleccionado = "AvatarSeleccionado";
 
     void Start()
     {
-        int guardado = Mathf.Clamp(PlayerPrefs.GetInt(KeyAvatarSeleccionado, 0), 0, avatares.Length - 1);
-        dropdownAvatar.value = guardado;
-        dropdownAvatar.RefreshShownValue();
-        dropdownAvatar.onValueChanged.AddListener(CambiarAvatar);
+        if (dropdownAvatar != null)
+        {
+            int guardado = Mathf.Clamp(PlayerPrefs.GetInt(KeyAvatarSeleccionado, 0), 0, catalogo.avatares.Length - 1);
+            dropdownAvatar.value = guardado;
+            dropdownAvatar.RefreshShownValue();
+            dropdownAvatar.onValueChanged.AddListener(CambiarAvatar);
+        }
 
         ActualizarAvatar();
     }
-
 
     public void CambiarAvatar(int indice)
     {
@@ -50,29 +45,29 @@ public class AvatarManager : MonoBehaviour
 
     public void ActualizarAvatar()
     {
-        if (avatares == null || avatares.Length == 0) return;
+        if (catalogo == null || catalogo.avatares.Length == 0) return;
 
-        int seleccionado = Mathf.Clamp(PlayerPrefs.GetInt(KeyAvatarSeleccionado, 0), 0, avatares.Length - 1);
-        AvatarData avatar = avatares[seleccionado];
+        int seleccionado = Mathf.Clamp(PlayerPrefs.GetInt(KeyAvatarSeleccionado, 0), 0, catalogo.avatares.Length - 1);
+        AvatarData avatar = catalogo.avatares[seleccionado];
 
         int aprobados = ContarQuizzesAprobados();
 
         Sprite forma;
-        if (aprobados >= quizzesParaAvanzado)
+        if (aprobados >= catalogo.quizzesParaAvanzado)
             forma = avatar.avanzado;
-        else if (aprobados >= quizzesParaIntermedio)
+        else if (aprobados >= catalogo.quizzesParaIntermedio)
             forma = avatar.intermedio;
         else
             forma = avatar.principiante;
 
-        imagenAvatar.sprite = forma;
-        nombreAvatar.text = avatar.nombre;
+        if (imagenAvatar != null) imagenAvatar.sprite = forma;
+        if (nombreAvatar != null) nombreAvatar.text = avatar.nombre;
     }
 
     int ContarQuizzesAprobados()
     {
         int aprobados = 0;
-        foreach (string tema in nombresTemas)
+        foreach (string tema in catalogo.nombresTemas)
         {
             if (PlayerPrefs.GetInt("QuizAprobado_" + tema, 0) == 1)
                 aprobados++;

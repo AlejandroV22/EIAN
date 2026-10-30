@@ -42,11 +42,9 @@ public class ZonaInteractiva2 : MonoBehaviour, IPointerEnterHandler, IPointerExi
 
     private static InfoPanel BuscarPanel()
     {
-        // Si ya lo encontró otra zona (y no fue destruido al cambiar de escena), se reutiliza
-        if (panelCache != null) return panelCache;
 
-        // Include = también encuentra objetos desactivados en la jerarquía
-        InfoPanel[] paneles = FindObjectsByType<InfoPanel>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+        if (panelCache != null) return panelCache;
+        InfoPanel[] paneles = FindObjectsByType<InfoPanel>(FindObjectsInactive.Include);
 
         foreach (InfoPanel p in paneles)
         {

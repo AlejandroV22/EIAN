@@ -37,7 +37,7 @@ public class DragImage : MonoBehaviour, IPointerDownHandler, IDragHandler
 
     private Button BuscarBoton()
     {
-        Button[] botones = FindObjectsByType<Button>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+        Button[] botones = FindObjectsByType<Button>(FindObjectsInactive.Include);
 
         foreach (Button b in botones)
         {

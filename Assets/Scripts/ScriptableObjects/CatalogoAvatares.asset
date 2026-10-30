@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e3f5873932d6cc41836ee95fdafbbdf, type: 3}
+  m_Name: CatalogoAvatares
+  m_EditorClassIdentifier: Assembly-CSharp::CatalogoAvatares
+  avatares:
+  - nombre: Edgar
+    principiante: {fileID: 21300000, guid: 94ff78b1ae932844eb4114d2f790898f, type: 3}
+    intermedio: {fileID: 21300000, guid: 7659c4ddc9e3b7241953c841a1916727, type: 3}
+    avanzado: {fileID: 21300000, guid: 7cd01d0e84afcf545a973f4cc535aed7, type: 3}
+  - nombre: Camila
+    principiante: {fileID: 21300000, guid: 0c9acb62cb08e4a48b753a3c4dc9448d, type: 3}
+    intermedio: {fileID: 21300000, guid: 1de3ae317d0910f45a2b7ba99ba334e8, type: 3}
+    avanzado: {fileID: 21300000, guid: 0205ed574e4724149b04d274a2417a4a, type: 3}
+  - nombre: Sam
+    principiante: {fileID: 21300000, guid: 74e0fb36937c410448cfbeda3c4ac2b8, type: 3}
+    intermedio: {fileID: 21300000, guid: 9f4736007b44ebe4f9f5587aeaaf45cc, type: 3}
+    avanzado: {fileID: 21300000, guid: a9b5048382be00a4ea512fab4f3edfd5, type: 3}
+  - nombre: Froggy
+    principiante: {fileID: 21300000, guid: 2bb228147b32155489ab942d5fc66adb, type: 3}
+    intermedio: {fileID: 21300000, guid: dc885dfa8a351a94987dd8ca00a2431f, type: 3}
+    avanzado: {fileID: 21300000, guid: eb0e0d4c04692c841a2e5eb69c23cb58, type: 3}
+  nombresTemas:
+  - quiz1
+  - quiz2
+  - quiz3
+  quizzesParaIntermedio: 1
+  quizzesParaAvanzado: 3

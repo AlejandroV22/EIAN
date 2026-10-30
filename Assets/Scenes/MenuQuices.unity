@@ -127,6 +127,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1824071106}
     m_Modifications:
+    - target: {fileID: 3727966009897755322, guid: 782270293fc79964b8a459e6b734e5a6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 31ab349f90f2160469494d3d8654626c, type: 3}
     - target: {fileID: 3736619025690021037, guid: 782270293fc79964b8a459e6b734e5a6, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -211,6 +215,10 @@ PrefabInstance:
       propertyPath: m_text
       value: Quiz 2
       objectReference: {fileID: 0}
+    - target: {fileID: 5866780354983386558, guid: 782270293fc79964b8a459e6b734e5a6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 80b3c92468bda2345b908cdb7d95d256, type: 3}
     - target: {fileID: 6783451366422541508, guid: 782270293fc79964b8a459e6b734e5a6, type: 3}
       propertyPath: nombreQuiz
       value: Quiz2
@@ -493,6 +501,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
+  m_UseReflectionProbes: 0
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
@@ -661,6 +670,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1824071106}
     m_Modifications:
+    - target: {fileID: 3727966009897755322, guid: 782270293fc79964b8a459e6b734e5a6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: fd2191d9981fc1e44a8d8f9411823cd9, type: 3}
     - target: {fileID: 3736619025690021037, guid: 782270293fc79964b8a459e6b734e5a6, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -745,6 +758,10 @@ PrefabInstance:
       propertyPath: m_text
       value: Quiz 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5866780354983386558, guid: 782270293fc79964b8a459e6b734e5a6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5cf206379a22413448f279177ccc93d9, type: 3}
     - target: {fileID: 6783451366422541508, guid: 782270293fc79964b8a459e6b734e5a6, type: 3}
       propertyPath: nombreQuiz
       value: Quiz3
@@ -839,15 +856,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 6a1ebbfa873c2e742ada5830e3f7d4af, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -917,10 +934,6 @@ PrefabInstance:
     - target: {fileID: 4984775345393091315, guid: 7e98f098938ecd24f86e507ebb9cf6da, type: 3}
       propertyPath: m_Name
       value: PanelAdvertencia
-      objectReference: {fileID: 0}
-    - target: {fileID: 4984775345393091315, guid: 7e98f098938ecd24f86e507ebb9cf6da, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7495762595177131026, guid: 7e98f098938ecd24f86e507ebb9cf6da, type: 3}
       propertyPath: m_Pivot.x
