@@ -16,7 +16,7 @@ MonoBehaviour:
   - nombre: Edgar
     principiante: {fileID: 21300000, guid: 94ff78b1ae932844eb4114d2f790898f, type: 3}
     intermedio: {fileID: 21300000, guid: 7659c4ddc9e3b7241953c841a1916727, type: 3}
-    avanzado: {fileID: 21300000, guid: 7cd01d0e84afcf545a973f4cc535aed7, type: 3}
+    avanzado: {fileID: 21300000, guid: 49e28f48e85b7974dbb10700ff91bf9b, type: 3}
   - nombre: Camila
     principiante: {fileID: 21300000, guid: 0c9acb62cb08e4a48b753a3c4dc9448d, type: 3}
     intermedio: {fileID: 21300000, guid: 1de3ae317d0910f45a2b7ba99ba334e8, type: 3}
@@ -24,11 +24,11 @@ MonoBehaviour:
   - nombre: Sam
     principiante: {fileID: 21300000, guid: 74e0fb36937c410448cfbeda3c4ac2b8, type: 3}
     intermedio: {fileID: 21300000, guid: 9f4736007b44ebe4f9f5587aeaaf45cc, type: 3}
-    avanzado: {fileID: 21300000, guid: a9b5048382be00a4ea512fab4f3edfd5, type: 3}
+    avanzado: {fileID: 21300000, guid: 3179e3d177babfc4bae2ec5e7ebe5662, type: 3}
   - nombre: Froggy
     principiante: {fileID: 21300000, guid: 2bb228147b32155489ab942d5fc66adb, type: 3}
     intermedio: {fileID: 21300000, guid: dc885dfa8a351a94987dd8ca00a2431f, type: 3}
-    avanzado: {fileID: 21300000, guid: eb0e0d4c04692c841a2e5eb69c23cb58, type: 3}
+    avanzado: {fileID: 21300000, guid: af1960b0070305d4ab2b4884833d6205, type: 3}
   nombresTemas:
   - quiz1
   - quiz2

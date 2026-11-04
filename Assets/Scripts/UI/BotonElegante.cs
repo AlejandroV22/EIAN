@@ -18,7 +18,7 @@ public class BotonElegante : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
         escalaOriginal = transform.localScale;
 
         if (textoBoton == null)
-            textoBoton = GetComponentInChildren<TMP_Text>(true); // true = incluye inactivos
+            textoBoton = GetComponentInChildren<TMP_Text>(true); 
 
         if (textoBoton == null)
         {
