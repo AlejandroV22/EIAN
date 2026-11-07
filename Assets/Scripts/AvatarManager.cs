@@ -5,7 +5,8 @@ using TMPro;
 [System.Serializable]
 public class AvatarData
 {
-    public string nombre;      // "Avatar 1"
+    public string nombre;
+    public string nombreDefecto;      // "Avatar 1"
     public Sprite principiante;
     public Sprite intermedio;
     public Sprite avanzado;
@@ -59,9 +60,10 @@ public class AvatarManager : MonoBehaviour
             forma = avatar.intermedio;
         else
             forma = avatar.principiante;
-
+        if (nombreAvatar != null)
+        nombreAvatar.text = PlayerPrefs.GetString("NombreJugador", avatar.nombre);
         if (imagenAvatar != null) imagenAvatar.sprite = forma;
-        if (nombreAvatar != null) nombreAvatar.text = avatar.nombre;
+
     }
 
     int ContarQuizzesAprobados()

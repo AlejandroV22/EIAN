@@ -9,8 +9,8 @@ public class BotonConfiguration : MonoBehaviour
         void Start()
         {
             int quiz1Done = PlayerPrefs.GetInt("QuizAprobado_quiz1", 0);
-            Debug.Log("Quiz1: " + PlayerPrefs.GetInt("QuizAprobado_quiz1", 0));
-            Debug.Log(quiz1Done);
+//            Debug.Log("Quiz1: " + PlayerPrefs.GetInt("QuizAprobado_quiz1", 0));
+//            Debug.Log(quiz1Done);
             if (quiz1Done == 1 && settingsButton != null)
             {
                 settingsButton.SetActive(true);
